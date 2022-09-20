@@ -14,6 +14,7 @@ namespace BIT706_A2_Campen_5047211
         private string lastName;
         private string contactNo;
         private bool staffDiscount;
+        private List<Account> customerAccounts = new List<Account>();
        
         // class constructor
         public Customer()
@@ -114,6 +115,13 @@ namespace BIT706_A2_Campen_5047211
         public bool StaffDiscount { get => staffDiscount; set => staffDiscount = value; }
 
         public int CustomerID { get => customerID; }
+        public List<Account> CustomerAccounts { get => customerAccounts; }
+
+        public void addtoCustomerAccounts (Account account)
+        {
+            customerAccounts.Add(account);
+        }
+
 
         public string FullName { get => firstName + " " + lastName; }
 

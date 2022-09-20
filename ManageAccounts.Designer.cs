@@ -46,6 +46,8 @@ namespace BIT706_A2_Campen_5047211
             this.listBoxAccounts = new System.Windows.Forms.ListBox();
             this.gbTransactionInfo = new System.Windows.Forms.GroupBox();
             this.gbRecentTransactions = new System.Windows.Forms.GroupBox();
+            this.bTransfer = new System.Windows.Forms.Button();
+            this.bNewAccount = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -71,7 +73,7 @@ namespace BIT706_A2_Campen_5047211
             // buttonGo
             // 
             this.buttonGo.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonGo.Location = new System.Drawing.Point(34, 208);
+            this.buttonGo.Location = new System.Drawing.Point(36, 395);
             this.buttonGo.Name = "buttonGo";
             this.buttonGo.Size = new System.Drawing.Size(120, 23);
             this.buttonGo.TabIndex = 30;
@@ -103,7 +105,7 @@ namespace BIT706_A2_Campen_5047211
             // buttonInterest
             // 
             this.buttonInterest.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonInterest.Location = new System.Drawing.Point(637, 128);
+            this.buttonInterest.Location = new System.Drawing.Point(528, 127);
             this.buttonInterest.Name = "buttonInterest";
             this.buttonInterest.Size = new System.Drawing.Size(129, 23);
             this.buttonInterest.TabIndex = 27;
@@ -114,7 +116,7 @@ namespace BIT706_A2_Campen_5047211
             // buttonWithdrawal
             // 
             this.buttonWithdrawal.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonWithdrawal.Location = new System.Drawing.Point(438, 128);
+            this.buttonWithdrawal.Location = new System.Drawing.Point(393, 127);
             this.buttonWithdrawal.Name = "buttonWithdrawal";
             this.buttonWithdrawal.Size = new System.Drawing.Size(129, 23);
             this.buttonWithdrawal.TabIndex = 26;
@@ -201,9 +203,9 @@ namespace BIT706_A2_Campen_5047211
             this.listBoxAccounts.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxAccounts.FormattingEnabled = true;
             this.listBoxAccounts.ItemHeight = 15;
-            this.listBoxAccounts.Location = new System.Drawing.Point(34, 107);
+            this.listBoxAccounts.Location = new System.Drawing.Point(36, 227);
             this.listBoxAccounts.Name = "listBoxAccounts";
-            this.listBoxAccounts.Size = new System.Drawing.Size(120, 94);
+            this.listBoxAccounts.Size = new System.Drawing.Size(120, 154);
             this.listBoxAccounts.TabIndex = 18;
             // 
             // gbTransactionInfo
@@ -228,11 +230,35 @@ namespace BIT706_A2_Campen_5047211
             this.gbRecentTransactions.Text = "Recent Transactions";
             this.gbRecentTransactions.Visible = false;
             // 
+            // bTransfer
+            // 
+            this.bTransfer.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bTransfer.Location = new System.Drawing.Point(682, 127);
+            this.bTransfer.Name = "bTransfer";
+            this.bTransfer.Size = new System.Drawing.Size(129, 23);
+            this.bTransfer.TabIndex = 35;
+            this.bTransfer.Text = "Transfer";
+            this.bTransfer.UseVisualStyleBackColor = true;
+            this.bTransfer.Visible = false;
+            // 
+            // bNewAccount
+            // 
+            this.bNewAccount.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bNewAccount.Location = new System.Drawing.Point(39, 127);
+            this.bNewAccount.Name = "bNewAccount";
+            this.bNewAccount.Size = new System.Drawing.Size(120, 23);
+            this.bNewAccount.TabIndex = 36;
+            this.bNewAccount.Text = "New Account";
+            this.bNewAccount.UseVisualStyleBackColor = true;
+            this.bNewAccount.Click += new System.EventHandler(this.bNewAccount_Click);
+            // 
             // ManageAccounts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(830, 472);
+            this.Controls.Add(this.bNewAccount);
+            this.Controls.Add(this.bTransfer);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelError);
             this.Controls.Add(this.buttonGo);
@@ -269,6 +295,8 @@ namespace BIT706_A2_Campen_5047211
             this.Controls.SetChildIndex(this.buttonGo, 0);
             this.Controls.SetChildIndex(this.labelError, 0);
             this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.bTransfer, 0);
+            this.Controls.SetChildIndex(this.bNewAccount, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,5 +321,7 @@ namespace BIT706_A2_Campen_5047211
         private System.Windows.Forms.ListBox listBoxAccounts;
         private System.Windows.Forms.GroupBox gbTransactionInfo;
         private System.Windows.Forms.GroupBox gbRecentTransactions;
+        private System.Windows.Forms.Button bTransfer;
+        private System.Windows.Forms.Button bNewAccount;
     }
 }

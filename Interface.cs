@@ -6,14 +6,29 @@ using System.Threading.Tasks;
 
 namespace BIT706_A2_Campen_5047211
 {
-    public interface IObserver
+    public interface ICustomerObserver
     {
-        void Update(Customer c);
+        void UpdateCustomer(Customer c);
     }
 
-    public interface ISubject
+    public interface ICustomerSubject
     {
-        void AttachObserver(IObserver obs);
-        void NotifyObservers(Customer c);
+        void AttachObserver(ICustomerObserver obs);
+        void NotifyCustomerObservers(Customer c);
     }
+
+    public interface IAccountObserver
+    {
+        void UpdateAccount(Account acc);
+    }
+
+    public interface IAccountSubject
+    {
+        void AttachObserver(ICustomerObserver obs);
+
+        void NotifyAccountObservers(Account a);
+    }
+
+
+
 }

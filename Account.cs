@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace BIT706_A2_Campen_5047211
 {
-    public abstract class Account
+    public abstract class Account : IAccountObserver
     {
         protected static int nextID = 1;
         protected int accountID;
         protected Customer customer;
         protected double balance;
+        public List<ICustomerObserver> MyObservers = new List<ICustomerObserver>();
 
         public Account()
         {
@@ -24,6 +25,7 @@ namespace BIT706_A2_Campen_5047211
             accountID = nextID;
             nextID++;
             customer = c;
+            NotifyAccountObservers(this);
         }
 
         public abstract string AccountName();
@@ -40,5 +42,18 @@ namespace BIT706_A2_Campen_5047211
 
 
         public Customer CustomerOnAccount { get => customer; set => customer = value; }
+
+        public void AttachObserver(ICustomerObserver obs)
+        {
+            MyObservers.Add(obs);
+        }
+
+        public void NotifyAccountObservers(Account acc)
+        {
+            foreach (IAccountObserver obs in MyObservers)
+            {
+                obs.UpdateAccount(acc);
+            }
+        }
     }
 }

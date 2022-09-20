@@ -14,11 +14,14 @@ namespace BIT706_A2_Campen_5047211
         [STAThread]
         static void Main()
         {
+            Controller control = new Controller();
+            control.CreateTestData();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             var main_form = new Dashboard();
             main_form.Show();
             Application.Run();
+           
         }
 
 

@@ -10,13 +10,12 @@ using System.Windows.Forms;
 
 namespace BIT706_A2_Campen_5047211
 {
-    public partial class CustomerOptions : BIT706_A2_Campen_5047211.ParentForm, IObserver
+    public partial class CustomerOptions : BIT706_A2_Campen_5047211.ParentForm, ICustomerObserver
     {
         private Controller control = new Controller();
         public CustomerOptions()
         {
             InitializeComponent();
-            control.CreateTestData();
             PopulateCustomerListBox();
         }
         
@@ -36,7 +35,7 @@ namespace BIT706_A2_Campen_5047211
             addCustomer.Show();
             this.Hide();
         }       
-
+        //  TODO : set selected customer based on ID rather than list position
         //  checks a valid customer has been selected then opens EditCustomer form
         private void bEditCustomer_Click(object sender, EventArgs e)
         {
@@ -64,6 +63,7 @@ namespace BIT706_A2_Campen_5047211
             }
         }
 
+        //  TODO : set selected customer based on ID rather than list position
         //  checks a valid customer has been selected then deletes that customer
         private void bDeleteCustomer_Click(object sender, EventArgs e)
         {
@@ -116,7 +116,7 @@ namespace BIT706_A2_Campen_5047211
             }
         }
 
-        public void Update(Customer c)
+        public void UpdateCustomer(Customer c)
         {
             lbCustomerList.Items.Add(c.FullName);
         }
