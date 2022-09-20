@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace BIT706_A2_Campen_5047211
 {
-    class FailedWithdrawal
+    public class FailedWithdrawal : Exception
     {
+        public FailedWithdrawal()
+        {
+        }
+
+        public FailedWithdrawal(string message) : base(message)
+        {
+        }
     }
 }
