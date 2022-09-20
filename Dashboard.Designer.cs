@@ -50,7 +50,6 @@ namespace BIT706_A2_Campen_5047211
             this.Controls.Add(this.button1);
             this.Name = "Dashboard";
             this.Text = "Dashboard";
-            this.Load += new System.EventHandler(this.Dashboard_Load);
             this.Controls.SetChildIndex(this.button1, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
