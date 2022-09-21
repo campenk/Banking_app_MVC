@@ -26,7 +26,7 @@ namespace BIT706_A2_Campen_5047211
             lbCustomerList.Items.Clear();
             for (int i = 0; i < control.AllCustomers.Count; i++)
             {
-                lbCustomerList.Items.Add(control.AllCustomers[i].FullName);
+                lbCustomerList.Items.Add(control.AllCustomers[i]);
             }
         }
 
@@ -44,7 +44,7 @@ namespace BIT706_A2_Campen_5047211
                 //  checks selected customer is valid
                 try
                 {
-                    control.SelectedCustomer = control.AllCustomers[lbCustomerList.SelectedIndex];
+                    control.SelectedCustomer = (Customer)lbCustomerList.SelectedItem;
                     Form manageAccount = new ManageAccounts();
                     manageAccount.Show();
                     this.Close();

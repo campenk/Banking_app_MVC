@@ -52,5 +52,10 @@ namespace BIT706_A2_Campen_5047211
 
         public override void AddInterest()
         { }
+
+        public override string ToString()
+        {
+            return accountName + " " + accountID;
+        }
     }
 }

@@ -135,5 +135,10 @@ namespace BIT706_A2_Campen_5047211
         {
             return !input.All(c => char.IsDigit(c));
         }      
+
+        public override string ToString()
+        {
+            return FullName;
+        }
     }
 }

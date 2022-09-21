@@ -70,5 +70,10 @@ namespace BIT706_A2_Campen_5047211
 
         public double InterestRate { get => interestRate; set => interestRate = value; }
         public double Fee { get => fee; set => fee = value; }
+
+        public override string ToString()
+        {
+            return accountName + " " + accountID;
+        }
     }
 }

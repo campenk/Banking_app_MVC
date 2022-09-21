@@ -48,6 +48,7 @@ namespace BIT706_A2_Campen_5047211
             this.gbRecentTransactions = new System.Windows.Forms.GroupBox();
             this.bTransfer = new System.Windows.Forms.Button();
             this.bNewAccount = new System.Windows.Forms.Button();
+            this.bBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -192,7 +193,7 @@ namespace BIT706_A2_Campen_5047211
             // 
             this.labelAccounts.AutoSize = true;
             this.labelAccounts.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAccounts.Location = new System.Drawing.Point(34, 89);
+            this.labelAccounts.Location = new System.Drawing.Point(63, 148);
             this.labelAccounts.Name = "labelAccounts";
             this.labelAccounts.Size = new System.Drawing.Size(63, 15);
             this.labelAccounts.TabIndex = 19;
@@ -244,7 +245,7 @@ namespace BIT706_A2_Campen_5047211
             // bNewAccount
             // 
             this.bNewAccount.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bNewAccount.Location = new System.Drawing.Point(39, 127);
+            this.bNewAccount.Location = new System.Drawing.Point(36, 177);
             this.bNewAccount.Name = "bNewAccount";
             this.bNewAccount.Size = new System.Drawing.Size(120, 23);
             this.bNewAccount.TabIndex = 36;
@@ -252,11 +253,22 @@ namespace BIT706_A2_Campen_5047211
             this.bNewAccount.UseVisualStyleBackColor = true;
             this.bNewAccount.Click += new System.EventHandler(this.bNewAccount_Click);
             // 
+            // bBack
+            // 
+            this.bBack.Location = new System.Drawing.Point(39, 86);
+            this.bBack.Name = "bBack";
+            this.bBack.Size = new System.Drawing.Size(138, 23);
+            this.bBack.TabIndex = 37;
+            this.bBack.Text = "< Back to Dashboard";
+            this.bBack.UseVisualStyleBackColor = true;
+            this.bBack.Click += new System.EventHandler(this.bBack_Click);
+            // 
             // ManageAccounts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(830, 472);
+            this.Controls.Add(this.bBack);
             this.Controls.Add(this.bNewAccount);
             this.Controls.Add(this.bTransfer);
             this.Controls.Add(this.label1);
@@ -297,6 +309,7 @@ namespace BIT706_A2_Campen_5047211
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.bTransfer, 0);
             this.Controls.SetChildIndex(this.bNewAccount, 0);
+            this.Controls.SetChildIndex(this.bBack, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -323,5 +336,6 @@ namespace BIT706_A2_Campen_5047211
         private System.Windows.Forms.GroupBox gbRecentTransactions;
         private System.Windows.Forms.Button bTransfer;
         private System.Windows.Forms.Button bNewAccount;
+        private System.Windows.Forms.Button bBack;
     }
 }

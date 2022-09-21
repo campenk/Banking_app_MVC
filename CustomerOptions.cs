@@ -51,7 +51,7 @@ namespace BIT706_A2_Campen_5047211
                 //  checks selected customer is valid
                 try
                 {
-                    control.SelectedCustomer = control.AllCustomers[lbCustomerList.SelectedIndex];
+                    control.SelectedCustomer = (Customer)lbCustomerList.SelectedItem;
                     Form editCustomer = new EditCustomer();
                     editCustomer.Show();
                     this.Close();
@@ -79,8 +79,8 @@ namespace BIT706_A2_Campen_5047211
                 //  checks selected customer is valid
                 try
                 {
-                    control.SelectedCustomer = control.AllCustomers[lbCustomerList.SelectedIndex];
-                    string message = "Please confirm you would like to delete " + control.SelectedCustomer.FullName;
+                    control.SelectedCustomer = (Customer)lbCustomerList.SelectedItem;
+                    string message = "Please confirm you would like to delete " + control.SelectedCustomer;
                     string caption = "Confirm deletion";
                     MessageBoxButtons buttons = MessageBoxButtons.YesNo;
                     DialogResult result;
@@ -112,13 +112,13 @@ namespace BIT706_A2_Campen_5047211
             lbCustomerList.Items.Clear();
             for (int i = 0; i < control.AllCustomers.Count; i++)
             {
-                lbCustomerList.Items.Add(control.AllCustomers[i].FullName);
+                lbCustomerList.Items.Add(control.AllCustomers[i]);
             }
         }
 
         public void UpdateCustomer(Customer c)
         {
-            lbCustomerList.Items.Add(c.FullName);
+            lbCustomerList.Items.Add(c);
         }
     }
 }

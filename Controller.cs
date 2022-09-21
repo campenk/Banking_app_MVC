@@ -17,6 +17,12 @@ namespace BIT706_A2_Campen_5047211
         {
             Customer c = new Customer(firstName, lastName, phoneNumber, staffDiscount);
             allCustomers.Add(c);
+            Investment investment = new Investment(c, 4, 10, 750);
+            Omni omni = new Omni(c, 2, -1000, 10, 300);
+            Everyday everyday = new Everyday(c, 150);
+            c.addtoCustomerAccounts(investment);
+            c.addtoCustomerAccounts(omni);
+            c.addtoCustomerAccounts(everyday);
             NotifyCustomerObservers(c);
         }
 
@@ -76,14 +82,9 @@ namespace BIT706_A2_Campen_5047211
             }
             set
             {
-                if (allCustomers.Contains(selectedCustomer))
-                {
+                
                     selectedCustomer = value;
-                }
-                else
-                {
-                   throw new InvalidInputException("Customer not found");
-                }
+               
             }
         }
 
@@ -106,6 +107,7 @@ namespace BIT706_A2_Campen_5047211
                 CreateCustomer("Sam", "McLean", "0211111122", false);
                 CreateCustomer("Bob", "Smith", "0211111123", false);
             }
+
         }
 
         public void AttachObserver(ICustomerObserver obs)

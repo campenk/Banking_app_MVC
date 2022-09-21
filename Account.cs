@@ -12,7 +12,7 @@ namespace BIT706_A2_Campen_5047211
         protected int accountID;
         protected Customer customer;
         protected double balance;
-        public List<ICustomerObserver> MyObservers = new List<ICustomerObserver>();
+        public List<IAccountObserver> MyObservers = new List<IAccountObserver>();
 
         public Account()
         {
@@ -43,7 +43,7 @@ namespace BIT706_A2_Campen_5047211
 
         public Customer CustomerOnAccount { get => customer; set => customer = value; }
 
-        public void AttachObserver(ICustomerObserver obs)
+        public void AttachObserver(IAccountObserver obs)
         {
             MyObservers.Add(obs);
         }
@@ -55,5 +55,12 @@ namespace BIT706_A2_Campen_5047211
                 obs.UpdateAccount(acc);
             }
         }
+
+        public void UpdateAccount(Account acc)
+        {
+            throw new NotImplementedException();
+        }
+
+        
     }
 }
