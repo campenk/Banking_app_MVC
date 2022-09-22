@@ -45,10 +45,13 @@ namespace BIT706_A2_Campen_5047211
             this.labelAccounts = new System.Windows.Forms.Label();
             this.listBoxAccounts = new System.Windows.Forms.ListBox();
             this.gbTransactionInfo = new System.Windows.Forms.GroupBox();
+            this.cbRecipientAccount = new System.Windows.Forms.ComboBox();
+            this.labelRecipientAccount = new System.Windows.Forms.Label();
             this.gbRecentTransactions = new System.Windows.Forms.GroupBox();
-            this.bTransfer = new System.Windows.Forms.Button();
+            this.buttonTransfer = new System.Windows.Forms.Button();
             this.bNewAccount = new System.Windows.Forms.Button();
             this.bBack = new System.Windows.Forms.Button();
+            this.gbTransactionInfo.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -217,6 +220,8 @@ namespace BIT706_A2_Campen_5047211
             // 
             // gbTransactionInfo
             // 
+            this.gbTransactionInfo.Controls.Add(this.cbRecipientAccount);
+            this.gbTransactionInfo.Controls.Add(this.labelRecipientAccount);
             this.gbTransactionInfo.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbTransactionInfo.Location = new System.Drawing.Point(239, 177);
             this.gbTransactionInfo.Name = "gbTransactionInfo";
@@ -225,6 +230,26 @@ namespace BIT706_A2_Campen_5047211
             this.gbTransactionInfo.TabStop = false;
             this.gbTransactionInfo.Text = "Transaction details";
             this.gbTransactionInfo.Visible = false;
+            // 
+            // cbRecipientAccount
+            // 
+            this.cbRecipientAccount.FormattingEnabled = true;
+            this.cbRecipientAccount.Location = new System.Drawing.Point(289, 50);
+            this.cbRecipientAccount.Name = "cbRecipientAccount";
+            this.cbRecipientAccount.Size = new System.Drawing.Size(157, 22);
+            this.cbRecipientAccount.TabIndex = 39;
+            this.cbRecipientAccount.Visible = false;
+            // 
+            // labelRecipientAccount
+            // 
+            this.labelRecipientAccount.AutoSize = true;
+            this.labelRecipientAccount.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRecipientAccount.Location = new System.Drawing.Point(286, 27);
+            this.labelRecipientAccount.Name = "labelRecipientAccount";
+            this.labelRecipientAccount.Size = new System.Drawing.Size(150, 15);
+            this.labelRecipientAccount.TabIndex = 38;
+            this.labelRecipientAccount.Text = "Select recipient account";
+            this.labelRecipientAccount.Visible = false;
             // 
             // gbRecentTransactions
             // 
@@ -237,16 +262,17 @@ namespace BIT706_A2_Campen_5047211
             this.gbRecentTransactions.Text = "Recent Transactions";
             this.gbRecentTransactions.Visible = false;
             // 
-            // bTransfer
+            // buttonTransfer
             // 
-            this.bTransfer.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bTransfer.Location = new System.Drawing.Point(682, 127);
-            this.bTransfer.Name = "bTransfer";
-            this.bTransfer.Size = new System.Drawing.Size(129, 23);
-            this.bTransfer.TabIndex = 35;
-            this.bTransfer.Text = "Transfer";
-            this.bTransfer.UseVisualStyleBackColor = true;
-            this.bTransfer.Visible = false;
+            this.buttonTransfer.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTransfer.Location = new System.Drawing.Point(682, 127);
+            this.buttonTransfer.Name = "buttonTransfer";
+            this.buttonTransfer.Size = new System.Drawing.Size(129, 23);
+            this.buttonTransfer.TabIndex = 35;
+            this.buttonTransfer.Text = "Transfer";
+            this.buttonTransfer.UseVisualStyleBackColor = true;
+            this.buttonTransfer.Visible = false;
+            this.buttonTransfer.Click += new System.EventHandler(this.bTransfer_Click);
             // 
             // bNewAccount
             // 
@@ -276,7 +302,7 @@ namespace BIT706_A2_Campen_5047211
             this.ClientSize = new System.Drawing.Size(830, 472);
             this.Controls.Add(this.bBack);
             this.Controls.Add(this.bNewAccount);
-            this.Controls.Add(this.bTransfer);
+            this.Controls.Add(this.buttonTransfer);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelError);
             this.Controls.Add(this.buttonGo);
@@ -313,9 +339,11 @@ namespace BIT706_A2_Campen_5047211
             this.Controls.SetChildIndex(this.buttonGo, 0);
             this.Controls.SetChildIndex(this.labelError, 0);
             this.Controls.SetChildIndex(this.label1, 0);
-            this.Controls.SetChildIndex(this.bTransfer, 0);
+            this.Controls.SetChildIndex(this.buttonTransfer, 0);
             this.Controls.SetChildIndex(this.bNewAccount, 0);
             this.Controls.SetChildIndex(this.bBack, 0);
+            this.gbTransactionInfo.ResumeLayout(false);
+            this.gbTransactionInfo.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -340,8 +368,10 @@ namespace BIT706_A2_Campen_5047211
         private System.Windows.Forms.ListBox listBoxAccounts;
         private System.Windows.Forms.GroupBox gbTransactionInfo;
         private System.Windows.Forms.GroupBox gbRecentTransactions;
-        private System.Windows.Forms.Button bTransfer;
+        private System.Windows.Forms.Button buttonTransfer;
         private System.Windows.Forms.Button bNewAccount;
         private System.Windows.Forms.Button bBack;
+        private System.Windows.Forms.ComboBox cbRecipientAccount;
+        private System.Windows.Forms.Label labelRecipientAccount;
     }
 }

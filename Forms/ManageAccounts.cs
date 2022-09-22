@@ -37,11 +37,13 @@ namespace BIT706_A2_Campen_5047211
             labelAccountInfo.Visible = false;
             buttonDeposit.Visible = true;
             buttonWithdrawal.Visible = true;
+            buttonTransfer.Visible = true;
             listBoxRecentTransactions.Visible = true;
             gbRecentTransactions.Visible = true;
             labelAccountInfo.Visible = false;
             listBoxRecentTransactions.Items.Clear();
             labelAccountTitle.Text = accControl.SelectedAccount.AccountName() + " Account";
+            
 
             if (accControl.SelectedAccount.AccountName() != "Everyday")
             {
@@ -169,8 +171,43 @@ namespace BIT706_A2_Campen_5047211
                     MessageBox.Show(ex.Message);
                 }
             }
+            else if (buttonSubmit.Tag.ToString() == "transfer" && Double.TryParse(textBoxAmount.Text, out userInput) && userInput > 0)
+            {
+                try
+                {
+                    accControl.SelectedAccount.Withdrawal(userInput);
+                    Account recipientAccount = (Account)cbRecipientAccount.SelectedItem;
+                    recipientAccount.Deposit(userInput);
+                    listBoxRecentTransactions.Items.Clear();
+                    listBoxRecentTransactions.Items.Add(accControl.SelectedAccount.TransactionString());
+                    resetTransactionDetails();
+                }
+                catch (FailedWithdrawal ex)
+                {
+                    labelError.Visible = true;
+                    MessageBox.Show(ex.Message);
+                }
+            }
 
             labelAccountInfo.Text = accControl.SelectedAccount.AccountInfo();
+        }
+
+        private void bTransfer_Click(object sender, EventArgs e)
+        {
+            showTransactionDetails(true);
+            labelRecipientAccount.Visible = true;
+            cbRecipientAccount.Visible = true;
+            cbRecipientAccount.Items.Clear();
+            for (int i = 0; i < custControl.SelectedCustomer.CustomerAccounts.Count; i++)
+            {
+                if (custControl.SelectedCustomer.CustomerAccounts[i] != accControl.SelectedAccount)
+                {
+                    cbRecipientAccount.Items.Add(custControl.SelectedCustomer.CustomerAccounts[i]);
+                }
+            }
+            buttonSubmit.Tag = "transfer";
+
+
         }
     }
 }
