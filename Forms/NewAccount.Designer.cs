@@ -41,6 +41,7 @@ namespace BIT706_A2_Campen_5047211
             this.tbInterestRate = new System.Windows.Forms.TextBox();
             this.tbFee = new System.Windows.Forms.TextBox();
             this.tbOverdraft = new System.Windows.Forms.TextBox();
+            this.bBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cbAccountType
@@ -159,11 +160,22 @@ namespace BIT706_A2_Campen_5047211
             this.tbOverdraft.TabIndex = 17;
             this.tbOverdraft.Visible = false;
             // 
+            // bBack
+            // 
+            this.bBack.Location = new System.Drawing.Point(39, 86);
+            this.bBack.Name = "bBack";
+            this.bBack.Size = new System.Drawing.Size(161, 23);
+            this.bBack.TabIndex = 38;
+            this.bBack.Text = "< Back to Customer Accounts";
+            this.bBack.UseVisualStyleBackColor = true;
+            this.bBack.Click += new System.EventHandler(this.bBack_Click);
+            // 
             // NewAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.bBack);
             this.Controls.Add(this.tbOverdraft);
             this.Controls.Add(this.tbFee);
             this.Controls.Add(this.tbInterestRate);
@@ -190,6 +202,7 @@ namespace BIT706_A2_Campen_5047211
             this.Controls.SetChildIndex(this.tbInterestRate, 0);
             this.Controls.SetChildIndex(this.tbFee, 0);
             this.Controls.SetChildIndex(this.tbOverdraft, 0);
+            this.Controls.SetChildIndex(this.bBack, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,5 +222,6 @@ namespace BIT706_A2_Campen_5047211
         private System.Windows.Forms.TextBox tbInterestRate;
         private System.Windows.Forms.TextBox tbFee;
         private System.Windows.Forms.TextBox tbOverdraft;
+        private System.Windows.Forms.Button bBack;
     }
 }

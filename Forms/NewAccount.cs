@@ -33,8 +33,13 @@ namespace BIT706_A2_Campen_5047211
 
 
             
-                if (cbAccountType.SelectedIndex != -1)
-                    Console.WriteLine(cbAccountType.SelectedIndex);
+                if (cbAccountType.SelectedIndex == -1)
+            {
+
+            }
+                else
+            {
+                Console.WriteLine(cbAccountType.SelectedIndex);
                 {
                     string selectedAccountType = cbAccountType.SelectedItem.ToString();
                     Console.WriteLine(selectedAccountType);
@@ -44,7 +49,7 @@ namespace BIT706_A2_Campen_5047211
                         SetFormControlPosition(tbBalance, xControlPoint, yPoint1);
 
                         SetFormControlPosition(bSubmit, xControlPoint, yPoint2);
-                        SetFormControlPosition(bReset, xResetButtonPoint, yPoint2);                
+                        SetFormControlPosition(bReset, xResetButtonPoint, yPoint2);
 
                     }
                     else if (selectedAccountType == "Investment")
@@ -80,9 +85,11 @@ namespace BIT706_A2_Campen_5047211
 
 
                         SetFormControlPosition(bSubmit, xControlPoint, yPoint5);
-                        SetFormControlPosition(bReset, xResetButtonPoint, yPoint5);                        
+                        SetFormControlPosition(bReset, xResetButtonPoint, yPoint5);
                     }
                 }
+            }
+                   
             
 
 
@@ -212,5 +219,11 @@ namespace BIT706_A2_Campen_5047211
             control.Location = new Point(xPosition, yPosition);
         }
 
+        private void bBack_Click(object sender, EventArgs e)
+        {
+            Form manageAccounts = new ManageAccounts();
+            manageAccounts.Show();
+            this.Hide();
+        }
     }
 }

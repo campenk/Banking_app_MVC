@@ -80,6 +80,7 @@ namespace BIT706_A2_Campen_5047211
             this.buttonGo.TabIndex = 30;
             this.buttonGo.Text = "Go";
             this.buttonGo.UseVisualStyleBackColor = true;
+            this.buttonGo.Click += new System.EventHandler(this.buttonGo_Click_1);
             // 
             // buttonSubmit
             // 
@@ -91,6 +92,7 @@ namespace BIT706_A2_Campen_5047211
             this.buttonSubmit.Text = "Submit";
             this.buttonSubmit.UseVisualStyleBackColor = true;
             this.buttonSubmit.Visible = false;
+            this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
             // 
             // labelAmount
             // 
@@ -113,6 +115,7 @@ namespace BIT706_A2_Campen_5047211
             this.buttonInterest.Text = "Add Interest";
             this.buttonInterest.UseVisualStyleBackColor = true;
             this.buttonInterest.Visible = false;
+            this.buttonInterest.Click += new System.EventHandler(this.buttonInterest_Click);
             // 
             // buttonWithdrawal
             // 
@@ -124,6 +127,7 @@ namespace BIT706_A2_Campen_5047211
             this.buttonWithdrawal.Text = "Make a withdrawal";
             this.buttonWithdrawal.UseVisualStyleBackColor = true;
             this.buttonWithdrawal.Visible = false;
+            this.buttonWithdrawal.Click += new System.EventHandler(this.buttonWithdrawal_Click);
             // 
             // buttonDeposit
             // 
@@ -135,6 +139,7 @@ namespace BIT706_A2_Campen_5047211
             this.buttonDeposit.Text = "Make a deposit";
             this.buttonDeposit.UseVisualStyleBackColor = true;
             this.buttonDeposit.Visible = false;
+            this.buttonDeposit.Click += new System.EventHandler(this.buttonDeposit_Click);
             // 
             // textBoxAmount
             // 
@@ -177,6 +182,7 @@ namespace BIT706_A2_Campen_5047211
             this.buttonAccountInfo.Text = "Account Info";
             this.buttonAccountInfo.UseVisualStyleBackColor = true;
             this.buttonAccountInfo.Visible = false;
+            this.buttonAccountInfo.Click += new System.EventHandler(this.buttonAccountInfo_Click_1);
             // 
             // labelAccountTitle
             // 
