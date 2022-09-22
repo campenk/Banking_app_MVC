@@ -156,7 +156,9 @@ namespace BIT706_A2_Campen_5047211
 
         private void bNewAccount_Click(object sender, EventArgs e)
         {
-
+            Form newAccount = new NewAccount();
+            newAccount.Show();
+            this.Hide();
         }
 
         private void bBack_Click(object sender, EventArgs e)

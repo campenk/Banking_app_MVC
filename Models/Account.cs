@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace BIT706_A2_Campen_5047211
 {
-    public abstract class Account : IAccountObserver
+    public abstract class Account 
     {
         protected static int nextID = 1;
         protected int accountID;
         protected Customer customer;
         protected double balance;
-        public List<IAccountObserver> MyObservers = new List<IAccountObserver>();
 
         public Account()
         {
@@ -25,7 +24,6 @@ namespace BIT706_A2_Campen_5047211
             accountID = nextID;
             nextID++;
             customer = c;
-            NotifyAccountObservers(this);
         }
 
         public abstract string AccountName();
@@ -34,6 +32,8 @@ namespace BIT706_A2_Campen_5047211
         public abstract string TransactionString();
         public abstract void Deposit(double despoit);
         public abstract void Withdrawal(double withdrawal);
+        public abstract bool isDigitPresent(string input);
+        public abstract bool isLetterPresent(string input);
 
 
 
@@ -43,24 +43,14 @@ namespace BIT706_A2_Campen_5047211
 
         public Customer CustomerOnAccount { get => customer; set => customer = value; }
 
-        public void AttachObserver(IAccountObserver obs)
-        {
-            MyObservers.Add(obs);
-        }
-
-        public void NotifyAccountObservers(Account acc)
-        {
-            foreach (IAccountObserver obs in MyObservers)
-            {
-                obs.UpdateAccount(acc);
-            }
-        }
+       
 
         public void UpdateAccount(Account acc)
         {
             throw new NotImplementedException();
         }
 
-        
+      
+
     }
 }

@@ -13,6 +13,7 @@ namespace BIT706_A2_Campen_5047211
 
         public Everyday(Customer newCustomer, double newBalance)
         {
+            
             customer = newCustomer;
             balance = newBalance;
         }
@@ -56,6 +57,18 @@ namespace BIT706_A2_Campen_5047211
         public override string ToString()
         {
             return accountName + " " + accountID;
+        }
+
+        //  returns true if string contains a numeric character
+        public override bool isDigitPresent(string input)
+        {
+            return input.Any(c => char.IsDigit(c));
+        }
+
+        //  returns true if string contains an alphabet character
+        public override bool isLetterPresent(string input)
+        {
+            return !input.All(c => char.IsDigit(c));
         }
     }
 }

@@ -24,7 +24,7 @@ namespace BIT706_A2_Campen_5047211
 
     public interface IAccountSubject
     {
-        void AttachObserver(ICustomerObserver obs);
+        void AttachAccountObserver(IAccountObserver obs);
 
         void NotifyAccountObservers(Account a);
     }

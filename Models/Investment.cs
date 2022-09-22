@@ -15,8 +15,11 @@ namespace BIT706_A2_Campen_5047211
 
         public Investment(Customer newCustomer, double newInterestRate, double newFee, double newBalance)
         {
+           
             customer = newCustomer;
             interestRate = newInterestRate;
+
+            //  TODO: Move this logic into the withdrawal method
             if (customer.StaffDiscount == true)
             {
                 fee = newFee / 2;
@@ -74,6 +77,18 @@ namespace BIT706_A2_Campen_5047211
         public override string ToString()
         {
             return accountName + " " + accountID;
+        }
+
+        //  returns true if string contains a numeric character
+        public override bool isDigitPresent(string input)
+        {
+            return input.Any(c => char.IsDigit(c));
+        }
+
+        //  returns true if string contains an alphabet character
+        public override bool isLetterPresent(string input)
+        {
+            return !input.All(c => char.IsDigit(c));
         }
     }
 }

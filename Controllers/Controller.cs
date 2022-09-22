@@ -73,7 +73,7 @@ namespace BIT706_A2_Campen_5047211
         //  getter and setter for AllCustomers
         public List<Customer> AllCustomers { get => allCustomers; set => allCustomers = value; }
 
-        // getter and setter for SelectedCustomer with validation
+        // getter and setter for SelectedCustomer
         public Customer SelectedCustomer
         {
             get
