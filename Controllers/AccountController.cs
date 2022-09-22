@@ -13,14 +13,10 @@ namespace BIT706_A2_Campen_5047211
 
         //  Creates new Everyday object
         public void CreateEverydayAccount(Customer cust, double balance)
-        {
-            
+        {            
                 Everyday everyday = new Everyday(cust, balance);
                 cust.addtoCustomerAccounts(everyday);
-                NotifyAccountObservers(everyday);
-            
-            
-            
+                NotifyAccountObservers(everyday);         
         }
 
         public void CreateInvestmentAccount(Customer cust, double interestRate, double fee, double balance)

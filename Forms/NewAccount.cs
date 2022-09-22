@@ -21,89 +21,69 @@ namespace BIT706_A2_Campen_5047211
 
         private void cbAccountType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Point pointControl1 = new Point(181, 182);
-            Point pointControl2 = new Point(181, 240);
-            Point pointControl3 = new Point(181, 298);
-            Point pointControl4 = new Point(181, 356);
-            Point pointControl5 = new Point(181, 413);
-            Point pointLabel1 = new Point(52, 182);
-            Point pointLabel2 = new Point(52, 240);
-            Point pointLabel3 = new Point(52, 298);
-            Point pointLabel4 = new Point(52, 356);
-            Point pointLabel5 = new Point(52, 413);
+            int xControlPoint = 181;
+            int xLabelPoint =  52;
+            int xResetButtonPoint = 333;
+            int yPoint1 = 182;
+            int yPoint2 = 240;
+            int yPoint3 = 298;
+            int yPoint4 = 356;
+            int yPoint5 = 413;
 
-            try
-            {
+
+
+            
                 if (cbAccountType.SelectedIndex != -1)
+                    Console.WriteLine(cbAccountType.SelectedIndex);
                 {
-                    if (cbAccountType.SelectedItem.ToString() == "Everyday")
+                    string selectedAccountType = cbAccountType.SelectedItem.ToString();
+                    Console.WriteLine(selectedAccountType);
+                    if (selectedAccountType == "Everyday")
                     {
-                        labelBalance.Location = pointLabel1;
-                        labelBalance.Visible = true;
-                        tbBalance.Location = pointControl1;
-                        tbBalance.Visible = true;
+                        SetFormControlPosition(labelBalance, xLabelPoint, yPoint1);
+                        SetFormControlPosition(tbBalance, xControlPoint, yPoint1);
 
-                        bSubmit.Location = pointControl2;
-                        bSubmit.Visible = true;
-                        bReset.Location = new Point(333, 240);
-                        bReset.Visible = true;
+                        SetFormControlPosition(bSubmit, xControlPoint, yPoint2);
+                        SetFormControlPosition(bReset, xResetButtonPoint, yPoint2);                
 
                     }
-                    else if (cbAccountType.SelectedItem.ToString() == "Investment")
+                    else if (selectedAccountType == "Investment")
                     {
-                        labelFee.Location = pointLabel1;
-                        labelFee.Visible = true;
-                        tbFee.Location = pointControl1;
-                        tbFee.Visible = true;
+                        SetFormControlPosition(labelFee, xLabelPoint, yPoint1);
+                        SetFormControlPosition(tbFee, xControlPoint, yPoint1);
 
-                        labelInterestRate.Location = pointLabel2;
-                        labelInterestRate.Visible = true;
-                        tbInterestRate.Location = pointControl2;
-                        tbInterestRate.Visible = true;
+                        SetFormControlPosition(labelInterestRate, xLabelPoint, yPoint2);
+                        SetFormControlPosition(tbInterestRate, xControlPoint, yPoint2);
 
-                        labelBalance.Location = pointLabel3;
-                        labelBalance.Visible = true;
-                        tbBalance.Location = pointControl3;
-                        tbBalance.Visible = true;
+                        SetFormControlPosition(labelBalance, xLabelPoint, yPoint3);
+                        SetFormControlPosition(tbBalance, xControlPoint, yPoint3);
 
-                        bSubmit.Location = pointControl4;
-                        bSubmit.Visible = true;
-                        bReset.Location = new Point(333, 356);
-                        bReset.Visible = true;
+                        SetFormControlPosition(bSubmit, xControlPoint, yPoint4);
+                        SetFormControlPosition(bReset, xResetButtonPoint, yPoint4);
+
+
                     }
-                    else if (cbAccountType.SelectedItem.ToString() == "Omni")
+                    else if (selectedAccountType == "Omni")
                     {
-                        labelFee.Location = pointLabel1;
-                        labelFee.Visible = true;
-                        tbFee.Location = pointControl1;
-                        tbFee.Visible = true;
 
-                        labelInterestRate.Location = pointLabel2;
-                        labelInterestRate.Visible = true;
-                        tbInterestRate.Location = pointControl2;
-                        tbInterestRate.Visible = true;
+                        SetFormControlPosition(labelFee, xLabelPoint, yPoint1);
+                        SetFormControlPosition(tbFee, xControlPoint, yPoint1);
 
-                        labelOverdraft.Location = pointLabel3;
-                        labelOverdraft.Visible = true;
-                        tbOverdraft.Location = pointControl3;
-                        tbOverdraft.Visible = true;
+                        SetFormControlPosition(labelInterestRate, xLabelPoint, yPoint2);
+                        SetFormControlPosition(tbInterestRate, xControlPoint, yPoint2);
 
-                        labelBalance.Location = pointLabel4;
-                        labelBalance.Visible = true;
-                        tbBalance.Location = pointControl4;
-                        tbBalance.Visible = true;
+                        SetFormControlPosition(labelOverdraft, xLabelPoint, yPoint3);
+                        SetFormControlPosition(tbOverdraft, xControlPoint, yPoint3);
 
-                        bSubmit.Location = pointControl5;
-                        bSubmit.Visible = true;
-                        bReset.Location = new Point(333, 413);
-                        bReset.Visible = true;
+                        SetFormControlPosition(labelBalance, xLabelPoint, yPoint4);
+                        SetFormControlPosition(tbBalance, xControlPoint, yPoint4);
+
+
+                        SetFormControlPosition(bSubmit, xControlPoint, yPoint5);
+                        SetFormControlPosition(bReset, xResetButtonPoint, yPoint5);                        
                     }
                 }
-            }
-            catch (NullReferenceException ex)
-            {
-
-            }
+            
 
 
         }
@@ -224,6 +204,12 @@ namespace BIT706_A2_Campen_5047211
             {
                 ResetFormContents();
             }
+        }
+
+        private void SetFormControlPosition(Control control, int xPosition, int yPosition)
+        {
+            control.Visible = true;
+            control.Location = new Point(xPosition, yPosition);
         }
 
     }
