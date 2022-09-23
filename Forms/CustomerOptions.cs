@@ -105,15 +105,7 @@ namespace BIT706_A2_Campen_5047211
             this.Close();
         }
 
-        //  populates lbCustomerList with Customer objects from the AllCustomers list
-        private void PopulateCustomerListBox()
-        {
-            lbCustomerList.Items.Clear();
-            for (int i = 0; i < customerController.AllCustomers.Count; i++)
-            {
-                lbCustomerList.Items.Add(customerController.AllCustomers[i]);
-            }
-        }
+      
 
         public void UpdateCustomer(Customer c)
         {
