@@ -65,6 +65,11 @@ namespace BIT706_A2_Campen_5047211
             }
         }
 
+        public IIterator CreateIterator()
+        {
+            return new AccountIterator();
+        }
+
 
     }
 }

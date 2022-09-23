@@ -19,7 +19,7 @@ namespace BIT706_A2_Campen_5047211
         public ManageAccounts()
         {
             InitializeComponent();
-            PopulateAccountListBox();
+            RefreshList();
             Update();
         }
 
@@ -70,14 +70,7 @@ namespace BIT706_A2_Campen_5047211
             textBoxAmount.Text = "";
         }
 
-        private void PopulateAccountListBox()
-        {
-            listBoxAccounts.Items.Clear();
-            for (int i = 0; i < customerController.SelectedCustomer.CustomerAccounts.Count; i++)
-            {
-                listBoxAccounts.Items.Add(customerController.SelectedCustomer.CustomerAccounts[i]);
-            }
-        }
+        
 
         public void UpdateAccount(Account acc)
         {
@@ -202,6 +195,28 @@ namespace BIT706_A2_Campen_5047211
                 }
             }
             buttonSubmit.Tag = "transfer";
+        }
+
+        private void PopulateAccountListBox()
+        {
+            listBoxAccounts.Items.Clear();
+            for (int i = 0; i < customerController.SelectedCustomer.CustomerAccounts.Count; i++)
+            {
+                listBoxAccounts.Items.Add(customerController.SelectedCustomer.CustomerAccounts[i]);
+            }
+        }
+
+        public void RefreshList()
+        {
+            listBoxAccounts.Items.Clear();
+            for (IIterator it = accountController.CreateIterator(); it.isDone() == false;)
+
+            {
+
+                listBoxAccounts.Items.Add(((Account)it.getNext()));
+
+            }
+
         }
     }
 }

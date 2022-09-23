@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountIterator.cs" />
     <Compile Include="CustomerIterator.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Controllers\AccountController.cs" />
