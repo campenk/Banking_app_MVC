@@ -17,7 +17,7 @@ namespace BIT706_A2_Campen_5047211
         public SelectCustomer()
         {
             InitializeComponent();
-            PopulateCustomerListBox();
+            RefreshList();
         }
 
         //  populates lbCustomerList with Customer objects from the AllCustomers list
@@ -28,6 +28,19 @@ namespace BIT706_A2_Campen_5047211
             {
                 lbCustomerList.Items.Add(customerController.AllCustomers[i]);
             }
+        }
+
+        public void RefreshList()
+        {
+            lbCustomerList.Items.Clear();
+            for (IIterator it = customerController.CreateIterator(); it.isDone() == false;)
+
+            {
+
+                lbCustomerList.Items.Add(((Customer)it.getNext()));
+
+            }
+
         }
 
         private void bSubmit_Click(object sender, EventArgs e)
