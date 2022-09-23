@@ -12,7 +12,7 @@ namespace BIT706_A2_Campen_5047211
         protected int accountID;
         protected Customer customer;
         protected double balance;
-
+        protected CustomerController custControl = new CustomerController();
         public Account()
         {
             accountID = nextID;
@@ -23,7 +23,14 @@ namespace BIT706_A2_Campen_5047211
         {
             accountID = nextID;
             nextID++;
-            customer = c;
+            if (custControl.AllCustomers.Contains(c))
+            {
+                customer = c;
+            }
+            else
+            {
+                throw new InvalidInputException("Invalid customer selected");
+            }
         }
 
         public abstract string AccountName();
@@ -32,8 +39,8 @@ namespace BIT706_A2_Campen_5047211
         public abstract string TransactionString();
         public abstract void Deposit(double despoit);
         public abstract void Withdrawal(double withdrawal);
-        public abstract bool isDigitPresent(string input);
-        public abstract bool isLetterPresent(string input);
+        public abstract bool IsDigitPresent(string input);
+        public abstract bool IsLetterPresent(string input);
 
 
 
@@ -42,7 +49,6 @@ namespace BIT706_A2_Campen_5047211
 
 
         public Customer CustomerOnAccount { get => customer; set => customer = value; }
-
        
 
         public void UpdateAccount(Account acc)

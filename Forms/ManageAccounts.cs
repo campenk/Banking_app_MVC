@@ -12,8 +12,8 @@ namespace BIT706_A2_Campen_5047211
 {
     public partial class ManageAccounts : BIT706_A2_Campen_5047211.ParentForm
     {
-        private AccountController accControl = new AccountController();
-        private Controller custControl = new Controller();
+        private AccountController accountController = new AccountController();
+        private CustomerController customerController = new CustomerController();
         //  class variables
 
         public ManageAccounts()
@@ -21,8 +21,6 @@ namespace BIT706_A2_Campen_5047211
             InitializeComponent();
             PopulateAccountListBox();
             Update();
-            Console.WriteLine("page loaded");
-
         }
 
         /******************
@@ -42,10 +40,9 @@ namespace BIT706_A2_Campen_5047211
             gbRecentTransactions.Visible = true;
             labelAccountInfo.Visible = false;
             listBoxRecentTransactions.Items.Clear();
-            labelAccountTitle.Text = accControl.SelectedAccount.AccountName() + " Account";
-            
+            labelAccountTitle.Text = accountController.SelectedAccount.AccountName() + " Account";            
 
-            if (accControl.SelectedAccount.AccountName() != "Everyday")
+            if (accountController.SelectedAccount.AccountName() != "Everyday")
             {
                 buttonInterest.Visible = true;
             }
@@ -76,9 +73,9 @@ namespace BIT706_A2_Campen_5047211
         private void PopulateAccountListBox()
         {
             listBoxAccounts.Items.Clear();
-            for (int i = 0; i < custControl.SelectedCustomer.CustomerAccounts.Count; i++)
+            for (int i = 0; i < customerController.SelectedCustomer.CustomerAccounts.Count; i++)
             {
-                listBoxAccounts.Items.Add(custControl.SelectedCustomer.CustomerAccounts[i]);
+                listBoxAccounts.Items.Add(customerController.SelectedCustomer.CustomerAccounts[i]);
             }
         }
 
@@ -91,44 +88,40 @@ namespace BIT706_A2_Campen_5047211
         {
             Form newAccount = new NewAccount();
             newAccount.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void bBack_Click(object sender, EventArgs e)
         {
             Form selectCustomer = new SelectCustomer();
             selectCustomer.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void buttonGo_Click_1(object sender, EventArgs e)
         {
-            Console.WriteLine("button clicked");
-
-
             //  check valid selection is made in listbox
             Console.WriteLine(listBoxAccounts.SelectedIndex);
             if (listBoxAccounts.SelectedIndex != -1)
             {
-                accControl.SelectedAccount = (Account)listBoxAccounts.SelectedItem;
+                accountController.SelectedAccount = (Account)listBoxAccounts.SelectedItem;
                 showCurrentAccountOptions();
             }
-
         }
 
         private void buttonAccountInfo_Click_1(object sender, EventArgs e)
         {
-            labelAccountInfo.Text = accControl.SelectedAccount.AccountInfo();
+            labelAccountInfo.Text = accountController.SelectedAccount.AccountInfo();
             labelAccountInfo.Visible = true;
         }
 
         private void buttonInterest_Click(object sender, EventArgs e)
         {
             showTransactionDetails(false);
-            accControl.SelectedAccount.AddInterest();
+            accountController.SelectedAccount.AddInterest();
             listBoxRecentTransactions.Items.Clear();
-            listBoxRecentTransactions.Items.Add(accControl.SelectedAccount.TransactionString());
-            labelAccountInfo.Text = accControl.SelectedAccount.AccountInfo();
+            listBoxRecentTransactions.Items.Add(accountController.SelectedAccount.TransactionString());
+            labelAccountInfo.Text = accountController.SelectedAccount.AccountInfo();
         }
 
         private void buttonDeposit_Click(object sender, EventArgs e)
@@ -151,21 +144,23 @@ namespace BIT706_A2_Campen_5047211
             labelError.Visible = false;
             if (buttonSubmit.Tag.ToString() == "deposit" && Double.TryParse(textBoxAmount.Text, out userInput) && userInput > 0)
             {
-                accControl.SelectedAccount.Deposit(userInput);
+                accountController.SelectedAccount.Deposit(userInput);
                 listBoxRecentTransactions.Items.Clear();
-                listBoxRecentTransactions.Items.Add(accControl.SelectedAccount.TransactionString());
+                string transactionString = accountController.SelectedAccount.TransactionString();
+                listBoxRecentTransactions.Items.Add(transactionString);
                 resetTransactionDetails();
             }
             else if (buttonSubmit.Tag.ToString() == "withdrawal" && Double.TryParse(textBoxAmount.Text, out userInput) && userInput > 0)
             {
                 try
                 {
-                    accControl.SelectedAccount.Withdrawal(userInput);
+                    accountController.SelectedAccount.Withdrawal(userInput);
                     listBoxRecentTransactions.Items.Clear();
-                    listBoxRecentTransactions.Items.Add(accControl.SelectedAccount.TransactionString());
+                    string transactionString = accountController.SelectedAccount.TransactionString();
+                    listBoxRecentTransactions.Items.Add(transactionString); 
                     resetTransactionDetails();
                 }
-                catch (FailedWithdrawal ex)
+                catch (FailedWithdrawalException ex)
                 {
                     labelError.Visible = true;
                     MessageBox.Show(ex.Message);
@@ -175,21 +170,22 @@ namespace BIT706_A2_Campen_5047211
             {
                 try
                 {
-                    accControl.SelectedAccount.Withdrawal(userInput);
+                    accountController.SelectedAccount.Withdrawal(userInput);
                     Account recipientAccount = (Account)cbRecipientAccount.SelectedItem;
                     recipientAccount.Deposit(userInput);
                     listBoxRecentTransactions.Items.Clear();
-                    listBoxRecentTransactions.Items.Add(accControl.SelectedAccount.TransactionString());
+                    string transactionString = accountController.SelectedAccount.TransactionString();
+                    listBoxRecentTransactions.Items.Add(transactionString); 
                     resetTransactionDetails();
                 }
-                catch (FailedWithdrawal ex)
+                catch (FailedWithdrawalException ex)
                 {
                     labelError.Visible = true;
                     MessageBox.Show(ex.Message);
                 }
             }
 
-            labelAccountInfo.Text = accControl.SelectedAccount.AccountInfo();
+            labelAccountInfo.Text = accountController.SelectedAccount.AccountInfo();
         }
 
         private void bTransfer_Click(object sender, EventArgs e)
@@ -198,16 +194,14 @@ namespace BIT706_A2_Campen_5047211
             labelRecipientAccount.Visible = true;
             cbRecipientAccount.Visible = true;
             cbRecipientAccount.Items.Clear();
-            for (int i = 0; i < custControl.SelectedCustomer.CustomerAccounts.Count; i++)
+            for (int i = 0; i < customerController.SelectedCustomer.CustomerAccounts.Count; i++)
             {
-                if (custControl.SelectedCustomer.CustomerAccounts[i] != accControl.SelectedAccount)
+                if (customerController.SelectedCustomer.CustomerAccounts[i] != accountController.SelectedAccount)
                 {
-                    cbRecipientAccount.Items.Add(custControl.SelectedCustomer.CustomerAccounts[i]);
+                    cbRecipientAccount.Items.Add(customerController.SelectedCustomer.CustomerAccounts[i]);
                 }
             }
             buttonSubmit.Tag = "transfer";
-
-
         }
     }
 }

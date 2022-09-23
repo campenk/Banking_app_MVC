@@ -13,7 +13,7 @@ namespace BIT706_A2_Campen_5047211
     public partial class EditCustomer : BIT706_A2_Campen_5047211.ParentForm        
 
     {
-        private Controller control = new Controller();
+        private CustomerController control = new CustomerController();
         public EditCustomer()
         {
             InitializeComponent();
@@ -21,8 +21,7 @@ namespace BIT706_A2_Campen_5047211
             tbFirstName.Text = control.SelectedCustomer.FirstName;
             tbLastName.Text = control.SelectedCustomer.LastName;
             tbPhoneNo.Text = control.SelectedCustomer.ContactNo;
-            cbStaffDiscount.Checked = control.SelectedCustomer.StaffDiscount;
-            
+            cbStaffDiscount.Checked = control.SelectedCustomer.StaffDiscount;            
         }
 
         //  resets form inputs

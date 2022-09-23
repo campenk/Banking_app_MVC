@@ -12,11 +12,11 @@ namespace BIT706_A2_Campen_5047211
 {
     public partial class CustomerOptions : BIT706_A2_Campen_5047211.ParentForm, ICustomerObserver
     {
-        private Controller control = new Controller();
+        private CustomerController customerController = new CustomerController();
         public CustomerOptions()
         {
             InitializeComponent();
-            PopulateCustomerListBox();
+            RefreshList();
         }
         
         private void CustomerOptions_Load(object sender, EventArgs e)
@@ -33,7 +33,7 @@ namespace BIT706_A2_Campen_5047211
         {
             Form addCustomer = new AddCustomer();
             addCustomer.Show();
-            this.Hide();
+            this.Close();
         }       
         //  TODO : set selected customer based on ID rather than list position
         //  checks a valid customer has been selected then opens EditCustomer form
@@ -51,7 +51,7 @@ namespace BIT706_A2_Campen_5047211
                 //  checks selected customer is valid
                 try
                 {
-                    control.SelectedCustomer = (Customer)lbCustomerList.SelectedItem;
+                    customerController.SelectedCustomer = (Customer)lbCustomerList.SelectedItem;
                     Form editCustomer = new EditCustomer();
                     editCustomer.Show();
                     this.Close();
@@ -63,7 +63,6 @@ namespace BIT706_A2_Campen_5047211
             }
         }
 
-        //  TODO : set selected customer based on ID rather than list position
         //  checks a valid customer has been selected then deletes that customer
         private void bDeleteCustomer_Click(object sender, EventArgs e)
         {
@@ -79,16 +78,16 @@ namespace BIT706_A2_Campen_5047211
                 //  checks selected customer is valid
                 try
                 {
-                    control.SelectedCustomer = (Customer)lbCustomerList.SelectedItem;
-                    string message = "Please confirm you would like to delete " + control.SelectedCustomer;
+                    customerController.SelectedCustomer = (Customer)lbCustomerList.SelectedItem;
+                    string message = "Please confirm you would like to delete " + customerController.SelectedCustomer;
                     string caption = "Confirm deletion";
                     MessageBoxButtons buttons = MessageBoxButtons.YesNo;
                     DialogResult result;
                     result = MessageBox.Show(message, caption, buttons);
                     if (result == System.Windows.Forms.DialogResult.Yes)
                     {
-                        control.DeleteCustomer();
-                        PopulateCustomerListBox();
+                        customerController.DeleteCustomer();
+                        RefreshList();
                     }
                 }
                 catch (InvalidInputException ex)
@@ -110,15 +109,28 @@ namespace BIT706_A2_Campen_5047211
         private void PopulateCustomerListBox()
         {
             lbCustomerList.Items.Clear();
-            for (int i = 0; i < control.AllCustomers.Count; i++)
+            for (int i = 0; i < customerController.AllCustomers.Count; i++)
             {
-                lbCustomerList.Items.Add(control.AllCustomers[i]);
+                lbCustomerList.Items.Add(customerController.AllCustomers[i]);
             }
         }
 
         public void UpdateCustomer(Customer c)
         {
             lbCustomerList.Items.Add(c);
+        }
+
+        public void RefreshList()
+        {
+            lbCustomerList.Items.Clear();
+            for (IIterator it = customerController.CreateIterator(); it.isDone() == false;)
+
+            {
+
+                lbCustomerList.Items.Add(((Customer)it.getNext()));
+
+            }
+
         }
     }
 }

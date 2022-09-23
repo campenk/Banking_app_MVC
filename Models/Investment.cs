@@ -17,17 +17,7 @@ namespace BIT706_A2_Campen_5047211
         {
            
             customer = newCustomer;
-            interestRate = newInterestRate;
-
-            //  TODO: Move this logic into the withdrawal method
-            if (customer.StaffDiscount == true)
-            {
-                fee = newFee / 2;
-            }
-            else
-            {
-                fee = newFee;
-            }
+            interestRate = newInterestRate;            
             balance = newBalance;
         }
         public override string AccountInfo()
@@ -47,9 +37,14 @@ namespace BIT706_A2_Campen_5047211
         {
             if ((balance - withdrawal) < 0)
             {
-                balance -= fee;
-                transactionString = "Investment " + accountID + ";  withdrawal $" + withdrawal + ";  transaction failed;  fee $" + fee + ";  balance $" + Math.Round(balance, 2, MidpointRounding.AwayFromZero);
-                throw new FailedWithdrawal(accountName + " account: Withdrawal failed due to insufficient funds");
+                double transactionFee = fee;
+                if (this.CustomerOnAccount.StaffDiscount == true)
+                {
+                    transactionFee = fee / 2;
+                }
+                balance -= transactionFee;
+                transactionString = "Investment " + accountID + ";  withdrawal $" + withdrawal + ";  transaction failed;  fee $" + transactionFee + ";  balance $" + Math.Round(balance, 2, MidpointRounding.AwayFromZero);
+                throw new FailedWithdrawalException(accountName + " account: Withdrawal failed due to insufficient funds");
             }
             else
             {
@@ -80,13 +75,13 @@ namespace BIT706_A2_Campen_5047211
         }
 
         //  returns true if string contains a numeric character
-        public override bool isDigitPresent(string input)
+        public override bool IsDigitPresent(string input)
         {
             return input.Any(c => char.IsDigit(c));
         }
 
         //  returns true if string contains an alphabet character
-        public override bool isLetterPresent(string input)
+        public override bool IsLetterPresent(string input)
         {
             return !input.All(c => char.IsDigit(c));
         }

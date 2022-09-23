@@ -12,7 +12,7 @@ namespace BIT706_A2_Campen_5047211
 {
     public partial class SelectCustomer : BIT706_A2_Campen_5047211.ParentForm
     {
-        private Controller control = new Controller();
+        private CustomerController customerController = new CustomerController();
 
         public SelectCustomer()
         {
@@ -24,9 +24,9 @@ namespace BIT706_A2_Campen_5047211
         private void PopulateCustomerListBox()
         {
             lbCustomerList.Items.Clear();
-            for (int i = 0; i < control.AllCustomers.Count; i++)
+            for (int i = 0; i < customerController.AllCustomers.Count; i++)
             {
-                lbCustomerList.Items.Add(control.AllCustomers[i]);
+                lbCustomerList.Items.Add(customerController.AllCustomers[i]);
             }
         }
 
@@ -44,7 +44,7 @@ namespace BIT706_A2_Campen_5047211
                 //  checks selected customer is valid
                 try
                 {
-                    control.SelectedCustomer = (Customer)lbCustomerList.SelectedItem;
+                    customerController.SelectedCustomer = (Customer)lbCustomerList.SelectedItem;
                     Form manageAccount = new ManageAccounts();
                     manageAccount.Show();
                     this.Close();
@@ -60,7 +60,7 @@ namespace BIT706_A2_Campen_5047211
         {
             Form dashboard = new Dashboard();
             dashboard.Show();
-            this.Hide();
+            this.Close();
         }
     }
 }

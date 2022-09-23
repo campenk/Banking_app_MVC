@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomerIterator.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Forms\AddCustomer.cs">
@@ -54,7 +55,7 @@
     <Compile Include="Forms\AddCustomer.Designer.cs">
       <DependentUpon>AddCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\Controller.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Forms\CustomerOptions.cs">
       <SubType>Form</SubType>
@@ -75,7 +76,7 @@
       <DependentUpon>EditCustomer.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Everyday.cs" />
-    <Compile Include="FailedWithdrawal.cs" />
+    <Compile Include="FailedWithdrawalException.cs" />
     <Compile Include="Interface.cs" />
     <Compile Include="InvalidInputException.cs" />
     <Compile Include="Models\Investment.cs" />

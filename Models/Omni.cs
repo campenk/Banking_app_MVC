@@ -51,9 +51,14 @@ namespace BIT706_A2_Campen_5047211
         {
             if ((balance - withdrawal) < overdraft)
             {
-                balance -= fee;
-                transactionString = "Omni " + accountID + ";  withdrawal $" + withdrawal + ";  transaction failed; fee $" + fee + ";  balance $" + Math.Round(balance, 2, MidpointRounding.AwayFromZero);
-                throw new FailedWithdrawal(accountName + " account: Withdrawal failed due to insufficient funds");
+                double transactionFee = fee;
+                if (this.CustomerOnAccount.StaffDiscount == true)
+                {
+                    transactionFee = fee / 2;
+                }
+                balance -= transactionFee;
+                transactionString = "Omni " + accountID + ";  withdrawal $" + withdrawal + ";  transaction failed; fee $" + transactionFee + ";  balance $" + Math.Round(balance, 2, MidpointRounding.AwayFromZero);
+                throw new FailedWithdrawalException(accountName + " account: Withdrawal failed due to insufficient funds");
             }
             else
             {
@@ -70,7 +75,7 @@ namespace BIT706_A2_Campen_5047211
 
         public override void AddInterest()
         {
-            double interest = balance * (interestRate / 100);
+            double interest = (balance - 1000) * (interestRate / 100);
             Console.WriteLine(interest.ToString());
             balance += interest;
             transactionString = "Omni " + accountID + ";  add interest $" + interest + ";  balance $" + Math.Round(balance, 2, MidpointRounding.AwayFromZero);
@@ -86,13 +91,13 @@ namespace BIT706_A2_Campen_5047211
         }
 
         //  returns true if string contains a numeric character
-        public override bool isDigitPresent(string input)
+        public override bool IsDigitPresent(string input)
         {
             return input.Any(c => char.IsDigit(c));
         }
 
         //  returns true if string contains an alphabet character
-        public override bool isLetterPresent(string input)
+        public override bool IsLetterPresent(string input)
         {
             return !input.All(c => char.IsDigit(c));
         }

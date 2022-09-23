@@ -28,7 +28,7 @@ namespace BIT706_A2_Campen_5047211
         {
             Form selectCustomer = new SelectCustomer();
             selectCustomer.Show();
-            this.Hide();
+            this.Close();
         }
     }  
 }

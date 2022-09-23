@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BIT706_A2_Campen_5047211", "BIT706_A2_Campen_5047211.csproj", "{A7993DE2-66BE-42FF-80AE-4B4EEFBD6A1E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankTests_A3", "..\BankTests_A3\BankTests_A3.csproj", "{3011CF9E-7F76-4303-8118-59304C1252C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A7993DE2-66BE-42FF-80AE-4B4EEFBD6A1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7993DE2-66BE-42FF-80AE-4B4EEFBD6A1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7993DE2-66BE-42FF-80AE-4B4EEFBD6A1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3011CF9E-7F76-4303-8118-59304C1252C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3011CF9E-7F76-4303-8118-59304C1252C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3011CF9E-7F76-4303-8118-59304C1252C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3011CF9E-7F76-4303-8118-59304C1252C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

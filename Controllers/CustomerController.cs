@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BIT706_A2_Campen_5047211
 {
-    class Controller:ICustomerSubject
+    public class CustomerController:ICustomerSubject
     {
         private static List<Customer> allCustomers = new List<Customer>();
         private static Customer selectedCustomer;
@@ -121,6 +121,11 @@ namespace BIT706_A2_Campen_5047211
             {
                 obs.UpdateCustomer(c);
             }
+        }
+
+        public IIterator CreateIterator()
+        {
+            return new CustomerIterator();
         }
 
 

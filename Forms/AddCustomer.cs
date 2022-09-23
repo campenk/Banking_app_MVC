@@ -12,8 +12,7 @@ namespace BIT706_A2_Campen_5047211
 {
     public partial class AddCustomer : BIT706_A2_Campen_5047211.ParentForm
     {        
-        private Controller control = new Controller();
-                            
+        private CustomerController control = new CustomerController();                            
         public AddCustomer()
         {
             InitializeComponent();
@@ -40,7 +39,6 @@ namespace BIT706_A2_Campen_5047211
                 nullValuePresent = false;
             }
 
-
             if (nullValuePresent == false)
             {
                 try
@@ -65,7 +63,6 @@ namespace BIT706_A2_Campen_5047211
                         ResetFormContents();
                     }
                 }
-
                 catch (InvalidInputException exception)
                 {
                     MessageBox.Show(exception.Message);

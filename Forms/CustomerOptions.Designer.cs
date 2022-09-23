@@ -76,7 +76,7 @@ namespace BIT706_A2_Campen_5047211
             // 
             // bBack
             // 
-            this.bBack.Location = new System.Drawing.Point(42, 95);
+            this.bBack.Location = new System.Drawing.Point(44, 72);
             this.bBack.Name = "bBack";
             this.bBack.Size = new System.Drawing.Size(138, 23);
             this.bBack.TabIndex = 13;

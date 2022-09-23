@@ -12,8 +12,7 @@ namespace BIT706_A2_Campen_5047211
         private string transactionString;
 
         public Everyday(Customer newCustomer, double newBalance)
-        {
-            
+        {            
             customer = newCustomer;
             balance = newBalance;
         }
@@ -41,7 +40,7 @@ namespace BIT706_A2_Campen_5047211
             else
             {
                 transactionString = "Everyday " + accountID + ";  withdrawal $" + withdrawal + ";  transaction failed;  balance $" + Math.Round(balance, 2, MidpointRounding.AwayFromZero);
-                throw new FailedWithdrawal(accountName + " account: Withdrawal failed due to insufficient funds");
+                throw new FailedWithdrawalException(accountName + " account: Withdrawal failed due to insufficient funds");
             }
         }
 
@@ -60,13 +59,13 @@ namespace BIT706_A2_Campen_5047211
         }
 
         //  returns true if string contains a numeric character
-        public override bool isDigitPresent(string input)
+        public override bool IsDigitPresent(string input)
         {
             return input.Any(c => char.IsDigit(c));
         }
 
         //  returns true if string contains an alphabet character
-        public override bool isLetterPresent(string input)
+        public override bool IsLetterPresent(string input)
         {
             return !input.All(c => char.IsDigit(c));
         }

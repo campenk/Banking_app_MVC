@@ -28,7 +28,11 @@ namespace BIT706_A2_Campen_5047211
 
         void NotifyAccountObservers(Account a);
     }
-
+    public interface IIterator
+    {
+        Object getNext();
+        bool isDone();
+    }
 
 
 }

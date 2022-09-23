@@ -12,8 +12,8 @@ namespace BIT706_A2_Campen_5047211
 {
     public partial class NewAccount : BIT706_A2_Campen_5047211.ParentForm
     {
-        AccountController accControl = new AccountController();
-        Controller custControl = new Controller();
+        AccountController accountController = new AccountController();
+        CustomerController customerController = new CustomerController();
         public NewAccount()
         {
             InitializeComponent();
@@ -29,15 +29,12 @@ namespace BIT706_A2_Campen_5047211
             int yPoint3 = 298;
             int yPoint4 = 356;
             int yPoint5 = 413;
-
-
-
             
-                if (cbAccountType.SelectedIndex == -1)
+            if (cbAccountType.SelectedIndex == -1)
             {
 
             }
-                else
+            else
             {
                 Console.WriteLine(cbAccountType.SelectedIndex);
                 {
@@ -88,11 +85,7 @@ namespace BIT706_A2_Campen_5047211
                         SetFormControlPosition(bReset, xResetButtonPoint, yPoint5);
                     }
                 }
-            }
-                   
-            
-
-
+            }   
         }
 
         private void bReset_Click(object sender, EventArgs e)
@@ -106,12 +99,11 @@ namespace BIT706_A2_Campen_5047211
 
             if (selectedAccountType == "Everyday")
             {
-                double balance;
-                if (Double.TryParse(tbBalance.Text, out balance))
+                if (Double.TryParse(tbBalance.Text, out double balance))
                 {
                     try
                     {
-                        accControl.CreateEverydayAccount(custControl.SelectedCustomer, balance);
+                        accountController.CreateEverydayAccount(customerController.SelectedCustomer, balance);
                         AccountCreatedMessage();
                     }
                     catch (InvalidInputException exception)
@@ -126,14 +118,11 @@ namespace BIT706_A2_Campen_5047211
             }
             else if (selectedAccountType == "Investment")
             {
-                double balance;
-                double fee;
-                double interestRate;
-                if (Double.TryParse(tbBalance.Text, out balance) && Double.TryParse(tbFee.Text, out fee) && Double.TryParse(tbInterestRate.Text, out interestRate))
+                if (Double.TryParse(tbBalance.Text, out double balance) && Double.TryParse(tbFee.Text, out double fee) && Double.TryParse(tbInterestRate.Text, out double interestRate))
                 {
                     try
                     {
-                        accControl.CreateInvestmentAccount(custControl.SelectedCustomer, interestRate, fee, balance);
+                        accountController.CreateInvestmentAccount(customerController.SelectedCustomer, interestRate, fee, balance);
                         AccountCreatedMessage();
                     }
                     catch (InvalidInputException exception)
@@ -149,15 +138,11 @@ namespace BIT706_A2_Campen_5047211
 
             else if (selectedAccountType == "Omni")
             {
-                double balance;
-                double fee;
-                double interestRate;
-                double overdraft;
-                if (Double.TryParse(tbBalance.Text, out balance) && Double.TryParse(tbFee.Text, out fee) && Double.TryParse(tbInterestRate.Text, out interestRate) && Double.TryParse(tbOverdraft.Text, out overdraft))
+                if (Double.TryParse(tbBalance.Text, out double balance) && Double.TryParse(tbFee.Text, out double fee) && Double.TryParse(tbInterestRate.Text, out double interestRate) && Double.TryParse(tbOverdraft.Text, out double overdraft))
                 {
                     try
                     {
-                        accControl.CreateOmniAccount(custControl.SelectedCustomer, interestRate, overdraft, fee, balance);
+                        accountController.CreateOmniAccount(customerController.SelectedCustomer, interestRate, overdraft, fee, balance);
                         AccountCreatedMessage();
                     }
                     catch (InvalidInputException exception)
@@ -170,12 +155,6 @@ namespace BIT706_A2_Campen_5047211
                     throw new InvalidInputException("Invalid input");
                 }
             }
-
-
-
-
-
-
         }
         private void ResetFormContents()
         {
@@ -223,7 +202,7 @@ namespace BIT706_A2_Campen_5047211
         {
             Form manageAccounts = new ManageAccounts();
             manageAccounts.Show();
-            this.Hide();
+            this.Close();
         }
     }
 }

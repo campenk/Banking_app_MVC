@@ -48,7 +48,7 @@ namespace BIT706_A2_Campen_5047211
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(36, 70);
+            this.label1.Location = new System.Drawing.Point(36, 98);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(640, 13);
             this.label1.TabIndex = 1;

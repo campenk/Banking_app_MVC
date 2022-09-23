@@ -14,14 +14,22 @@ namespace BIT706_A2_Campen_5047211
         [STAThread]
         static void Main()
         {
-            Controller control = new Controller();
+            CustomerController control = new CustomerController();
             control.CreateTestData();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             var main_form = new Dashboard();
+            main_form.FormClosed += new FormClosedEventHandler(FormClosed);
             main_form.Show();
             Application.Run();
            
+        }
+
+        static void FormClosed(object sender, FormClosedEventArgs e)
+        {
+            ((Form)sender).FormClosed -= FormClosed;
+            if (Application.OpenForms.Count == 0) Application.ExitThread();
+            else Application.OpenForms[0].FormClosed += FormClosed;
         }
 
 
