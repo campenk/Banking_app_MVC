@@ -19,8 +19,7 @@ namespace BIT706_A2_Campen_5047211
         // class constructor
         public Customer()
         {
-            customerID = nextID;
-            nextID++;
+            customerID = CustomerSingleton.NextId;
         }
 
         //  parametized class constructor with input validation
@@ -42,10 +41,10 @@ namespace BIT706_A2_Campen_5047211
                     errorMessage += Environment.NewLine + "Phone Number";
                 }
                 throw new InvalidInputException(errorMessage);
-            }      
+            }
 
-            customerID = nextID;
-            nextID++;            
+            customerID = CustomerSingleton.NextId;
+
             firstName = newFirstName;            
             lastName = newLastName;            
             contactNo = newContactNo; 

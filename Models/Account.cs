@@ -15,14 +15,14 @@ namespace BIT706_A2_Campen_5047211
         protected CustomerController custControl = new CustomerController();
         public Account()
         {
-            accountID = nextID;
-            nextID++;
+            accountID = AccountSingleton.NextId;
+
         }
 
         public Account(Customer c)
         {
-            accountID = nextID;
-            nextID++;
+            accountID = AccountSingleton.NextId;
+
             if (custControl.AllCustomers.Contains(c))
             {
                 customer = c;

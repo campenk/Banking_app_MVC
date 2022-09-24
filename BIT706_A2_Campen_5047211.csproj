@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="AccountIterator.cs" />
     <Compile Include="CustomerIterator.cs" />
+    <Compile Include="CustomerSingleton.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Forms\AddCustomer.cs">
@@ -57,6 +58,7 @@
       <DependentUpon>AddCustomer.cs</DependentUpon>
     </Compile>
     <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="AccountSingleton.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Forms\CustomerOptions.cs">
       <SubType>Form</SubType>
