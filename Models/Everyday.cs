@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace BIT706_A2_Campen_5047211
 {
+    [Serializable]
     public class Everyday : Account
     {
         private string accountName = "Everyday";

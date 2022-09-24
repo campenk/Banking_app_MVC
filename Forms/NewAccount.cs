@@ -174,7 +174,7 @@ namespace BIT706_A2_Campen_5047211
         private void AccountCreatedMessage()
         {
             //  show message box with success message and option to return to CustomerOptions menu
-            string message = "Would you like to return to the Customer Options menu?";
+            string message = "Would you like to return to the Manage Accounts menu?";
             string caption = "New customer created successfully!";
             DialogResult result;
             result = MessageBox.Show(message, caption, MessageBoxButtons.YesNo);
@@ -182,8 +182,8 @@ namespace BIT706_A2_Campen_5047211
             //  check customer input on message box
             if (result == System.Windows.Forms.DialogResult.Yes)
             {
-                Form customerOptions = new CustomerOptions();
-                customerOptions.Show();
+                Form manageAccounts = new ManageAccounts();
+                manageAccounts.Show();
                 this.Close();
             }
             else if (result == System.Windows.Forms.DialogResult.No)

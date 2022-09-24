@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace BIT706_A2_Campen_5047211
 {
-    class AccountSingleton
+	[Serializable]
+
+	class AccountSingleton
     {
 		private int nextId;
 		private static AccountSingleton myInstance;

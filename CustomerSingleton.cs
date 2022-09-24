@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace BIT706_A2_Campen_5047211
 {
+	[Serializable]
+
 	class CustomerSingleton
 	{
 		private int nextId;
