@@ -1,0 +1,744 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Account
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Account
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BIT706_A2_Campen_5047211.Account">
+  
+  
+  <h1 id="BIT706_A2_Campen_5047211_Account" data-uid="BIT706_A2_Campen_5047211.Account" class="text-break">Class Account
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Account</span></div>
+      <div class="level2"><a class="xref" href="BIT706_A2_Campen_5047211.Everyday.html">Everyday</a></div>
+      <div class="level2"><a class="xref" href="BIT706_A2_Campen_5047211.Investment.html">Investment</a></div>
+      <div class="level2"><a class="xref" href="BIT706_A2_Campen_5047211.Omni.html">Omni</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BIT706_A2_Campen_5047211.html">BIT706_A2_Campen_5047211</a></h6>
+  <h6><strong>Assembly</strong>: BIT706_A2_Campen_5047211.dll</h6>
+  <h5 id="BIT706_A2_Campen_5047211_Account_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public abstract class Account</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/new/Serialization/apiSpec/new?filename=BIT706_A2_Campen_5047211_Account__ctor.md&amp;value=---%0Auid%3A%20BIT706_A2_Campen_5047211.Account.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/blob/Serialization/Models/Account.cs/#L17">View Source</a>
+  </span>
+  <a id="BIT706_A2_Campen_5047211_Account__ctor_" data-uid="BIT706_A2_Campen_5047211.Account.#ctor*"></a>
+  <h4 id="BIT706_A2_Campen_5047211_Account__ctor" data-uid="BIT706_A2_Campen_5047211.Account.#ctor">Account()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Account()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/new/Serialization/apiSpec/new?filename=BIT706_A2_Campen_5047211_Account__ctor_BIT706_A2_Campen_5047211_Customer_.md&amp;value=---%0Auid%3A%20BIT706_A2_Campen_5047211.Account.%23ctor(BIT706_A2_Campen_5047211.Customer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/blob/Serialization/Models/Account.cs/#L23">View Source</a>
+  </span>
+  <a id="BIT706_A2_Campen_5047211_Account__ctor_" data-uid="BIT706_A2_Campen_5047211.Account.#ctor*"></a>
+  <h4 id="BIT706_A2_Campen_5047211_Account__ctor_BIT706_A2_Campen_5047211_Customer_" data-uid="BIT706_A2_Campen_5047211.Account.#ctor(BIT706_A2_Campen_5047211.Customer)">Account(Customer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Account(Customer c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BIT706_A2_Campen_5047211.Customer.html">Customer</a></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/new/Serialization/apiSpec/new?filename=BIT706_A2_Campen_5047211_Account_accountID.md&amp;value=---%0Auid%3A%20BIT706_A2_Campen_5047211.Account.accountID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/blob/Serialization/Models/Account.cs/#L13">View Source</a>
+  </span>
+  <h4 id="BIT706_A2_Campen_5047211_Account_accountID" data-uid="BIT706_A2_Campen_5047211.Account.accountID">accountID</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int accountID</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/new/Serialization/apiSpec/new?filename=BIT706_A2_Campen_5047211_Account_balance.md&amp;value=---%0Auid%3A%20BIT706_A2_Campen_5047211.Account.balance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/blob/Serialization/Models/Account.cs/#L15">View Source</a>
+  </span>
+  <h4 id="BIT706_A2_Campen_5047211_Account_balance" data-uid="BIT706_A2_Campen_5047211.Account.balance">balance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected double balance</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/new/Serialization/apiSpec/new?filename=BIT706_A2_Campen_5047211_Account_custControl.md&amp;value=---%0Auid%3A%20BIT706_A2_Campen_5047211.Account.custControl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/blob/Serialization/Models/Account.cs/#L16">View Source</a>
+  </span>
+  <h4 id="BIT706_A2_Campen_5047211_Account_custControl" data-uid="BIT706_A2_Campen_5047211.Account.custControl">custControl</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CustomerController custControl</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BIT706_A2_Campen_5047211.CustomerController.html">CustomerController</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/new/Serialization/apiSpec/new?filename=BIT706_A2_Campen_5047211_Account_customer.md&amp;value=---%0Auid%3A%20BIT706_A2_Campen_5047211.Account.customer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/blob/Serialization/Models/Account.cs/#L14">View Source</a>
+  </span>
+  <h4 id="BIT706_A2_Campen_5047211_Account_customer" data-uid="BIT706_A2_Campen_5047211.Account.customer">customer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Customer customer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BIT706_A2_Campen_5047211.Customer.html">Customer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/new/Serialization/apiSpec/new?filename=BIT706_A2_Campen_5047211_Account_nextID.md&amp;value=---%0Auid%3A%20BIT706_A2_Campen_5047211.Account.nextID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/blob/Serialization/Models/Account.cs/#L12">View Source</a>
+  </span>
+  <h4 id="BIT706_A2_Campen_5047211_Account_nextID" data-uid="BIT706_A2_Campen_5047211.Account.nextID">nextID</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static int nextID</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/new/Serialization/apiSpec/new?filename=BIT706_A2_Campen_5047211_Account_AccountID.md&amp;value=---%0Auid%3A%20BIT706_A2_Campen_5047211.Account.AccountID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/blob/Serialization/Models/Account.cs/#L48">View Source</a>
+  </span>
+  <a id="BIT706_A2_Campen_5047211_Account_AccountID_" data-uid="BIT706_A2_Campen_5047211.Account.AccountID*"></a>
+  <h4 id="BIT706_A2_Campen_5047211_Account_AccountID" data-uid="BIT706_A2_Campen_5047211.Account.AccountID">AccountID</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AccountID { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/new/Serialization/apiSpec/new?filename=BIT706_A2_Campen_5047211_Account_Balance.md&amp;value=---%0Auid%3A%20BIT706_A2_Campen_5047211.Account.Balance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/blob/Serialization/Models/Account.cs/#L49">View Source</a>
+  </span>
+  <a id="BIT706_A2_Campen_5047211_Account_Balance_" data-uid="BIT706_A2_Campen_5047211.Account.Balance*"></a>
+  <h4 id="BIT706_A2_Campen_5047211_Account_Balance" data-uid="BIT706_A2_Campen_5047211.Account.Balance">Balance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Balance { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/new/Serialization/apiSpec/new?filename=BIT706_A2_Campen_5047211_Account_CustomerOnAccount.md&amp;value=---%0Auid%3A%20BIT706_A2_Campen_5047211.Account.CustomerOnAccount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/blob/Serialization/Models/Account.cs/#L52">View Source</a>
+  </span>
+  <a id="BIT706_A2_Campen_5047211_Account_CustomerOnAccount_" data-uid="BIT706_A2_Campen_5047211.Account.CustomerOnAccount*"></a>
+  <h4 id="BIT706_A2_Campen_5047211_Account_CustomerOnAccount" data-uid="BIT706_A2_Campen_5047211.Account.CustomerOnAccount">CustomerOnAccount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Customer CustomerOnAccount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BIT706_A2_Campen_5047211.Customer.html">Customer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/new/Serialization/apiSpec/new?filename=BIT706_A2_Campen_5047211_Account_AccountInfo.md&amp;value=---%0Auid%3A%20BIT706_A2_Campen_5047211.Account.AccountInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/blob/Serialization/Models/Account.cs/#L38">View Source</a>
+  </span>
+  <a id="BIT706_A2_Campen_5047211_Account_AccountInfo_" data-uid="BIT706_A2_Campen_5047211.Account.AccountInfo*"></a>
+  <h4 id="BIT706_A2_Campen_5047211_Account_AccountInfo" data-uid="BIT706_A2_Campen_5047211.Account.AccountInfo">AccountInfo()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract string AccountInfo()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/new/Serialization/apiSpec/new?filename=BIT706_A2_Campen_5047211_Account_AccountName.md&amp;value=---%0Auid%3A%20BIT706_A2_Campen_5047211.Account.AccountName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/blob/Serialization/Models/Account.cs/#L37">View Source</a>
+  </span>
+  <a id="BIT706_A2_Campen_5047211_Account_AccountName_" data-uid="BIT706_A2_Campen_5047211.Account.AccountName*"></a>
+  <h4 id="BIT706_A2_Campen_5047211_Account_AccountName" data-uid="BIT706_A2_Campen_5047211.Account.AccountName">AccountName()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract string AccountName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/new/Serialization/apiSpec/new?filename=BIT706_A2_Campen_5047211_Account_AddInterest.md&amp;value=---%0Auid%3A%20BIT706_A2_Campen_5047211.Account.AddInterest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/blob/Serialization/Models/Account.cs/#L39">View Source</a>
+  </span>
+  <a id="BIT706_A2_Campen_5047211_Account_AddInterest_" data-uid="BIT706_A2_Campen_5047211.Account.AddInterest*"></a>
+  <h4 id="BIT706_A2_Campen_5047211_Account_AddInterest" data-uid="BIT706_A2_Campen_5047211.Account.AddInterest">AddInterest()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void AddInterest()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/new/Serialization/apiSpec/new?filename=BIT706_A2_Campen_5047211_Account_Deposit_System_Double_.md&amp;value=---%0Auid%3A%20BIT706_A2_Campen_5047211.Account.Deposit(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/blob/Serialization/Models/Account.cs/#L41">View Source</a>
+  </span>
+  <a id="BIT706_A2_Campen_5047211_Account_Deposit_" data-uid="BIT706_A2_Campen_5047211.Account.Deposit*"></a>
+  <h4 id="BIT706_A2_Campen_5047211_Account_Deposit_System_Double_" data-uid="BIT706_A2_Campen_5047211.Account.Deposit(System.Double)">Deposit(Double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Deposit(double despoit)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">despoit</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/new/Serialization/apiSpec/new?filename=BIT706_A2_Campen_5047211_Account_IsDigitPresent_System_String_.md&amp;value=---%0Auid%3A%20BIT706_A2_Campen_5047211.Account.IsDigitPresent(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/blob/Serialization/Models/Account.cs/#L43">View Source</a>
+  </span>
+  <a id="BIT706_A2_Campen_5047211_Account_IsDigitPresent_" data-uid="BIT706_A2_Campen_5047211.Account.IsDigitPresent*"></a>
+  <h4 id="BIT706_A2_Campen_5047211_Account_IsDigitPresent_System_String_" data-uid="BIT706_A2_Campen_5047211.Account.IsDigitPresent(System.String)">IsDigitPresent(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool IsDigitPresent(string input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/new/Serialization/apiSpec/new?filename=BIT706_A2_Campen_5047211_Account_IsLetterPresent_System_String_.md&amp;value=---%0Auid%3A%20BIT706_A2_Campen_5047211.Account.IsLetterPresent(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/blob/Serialization/Models/Account.cs/#L44">View Source</a>
+  </span>
+  <a id="BIT706_A2_Campen_5047211_Account_IsLetterPresent_" data-uid="BIT706_A2_Campen_5047211.Account.IsLetterPresent*"></a>
+  <h4 id="BIT706_A2_Campen_5047211_Account_IsLetterPresent_System_String_" data-uid="BIT706_A2_Campen_5047211.Account.IsLetterPresent(System.String)">IsLetterPresent(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool IsLetterPresent(string input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/new/Serialization/apiSpec/new?filename=BIT706_A2_Campen_5047211_Account_TransactionString.md&amp;value=---%0Auid%3A%20BIT706_A2_Campen_5047211.Account.TransactionString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/blob/Serialization/Models/Account.cs/#L40">View Source</a>
+  </span>
+  <a id="BIT706_A2_Campen_5047211_Account_TransactionString_" data-uid="BIT706_A2_Campen_5047211.Account.TransactionString*"></a>
+  <h4 id="BIT706_A2_Campen_5047211_Account_TransactionString" data-uid="BIT706_A2_Campen_5047211.Account.TransactionString">TransactionString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract string TransactionString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/new/Serialization/apiSpec/new?filename=BIT706_A2_Campen_5047211_Account_UpdateAccount_BIT706_A2_Campen_5047211_Account_.md&amp;value=---%0Auid%3A%20BIT706_A2_Campen_5047211.Account.UpdateAccount(BIT706_A2_Campen_5047211.Account)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/blob/Serialization/Models/Account.cs/#L55">View Source</a>
+  </span>
+  <a id="BIT706_A2_Campen_5047211_Account_UpdateAccount_" data-uid="BIT706_A2_Campen_5047211.Account.UpdateAccount*"></a>
+  <h4 id="BIT706_A2_Campen_5047211_Account_UpdateAccount_BIT706_A2_Campen_5047211_Account_" data-uid="BIT706_A2_Campen_5047211.Account.UpdateAccount(BIT706_A2_Campen_5047211.Account)">UpdateAccount(Account)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateAccount(Account acc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BIT706_A2_Campen_5047211.Account.html">Account</a></td>
+        <td><span class="parametername">acc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/new/Serialization/apiSpec/new?filename=BIT706_A2_Campen_5047211_Account_Withdrawal_System_Double_.md&amp;value=---%0Auid%3A%20BIT706_A2_Campen_5047211.Account.Withdrawal(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/blob/Serialization/Models/Account.cs/#L42">View Source</a>
+  </span>
+  <a id="BIT706_A2_Campen_5047211_Account_Withdrawal_" data-uid="BIT706_A2_Campen_5047211.Account.Withdrawal*"></a>
+  <h4 id="BIT706_A2_Campen_5047211_Account_Withdrawal_System_Double_" data-uid="BIT706_A2_Campen_5047211.Account.Withdrawal(System.Double)">Withdrawal(Double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Withdrawal(double withdrawal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">withdrawal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/new/Serialization/apiSpec/new?filename=BIT706_A2_Campen_5047211_Account.md&amp;value=---%0Auid%3A%20BIT706_A2_Campen_5047211.Account%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/campenk/BIT706_A3_Campen_5047211/blob/Serialization/Models/Account.cs/#L9" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

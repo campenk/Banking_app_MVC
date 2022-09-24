@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace BIT706_A2_Campen_5047211
 {
+    /// <summary>
+    /// Controller for the Customer object. 
+    /// Implements Observer/Subject pattern through ICustomerSubject interface
+    /// Implements Iterator pattern through Iterator interface
+    /// Serializable class
+    /// </summary>
     [Serializable]
     public class CustomerController:ICustomerSubject
     {
@@ -13,21 +19,34 @@ namespace BIT706_A2_Campen_5047211
         private static Customer selectedCustomer;
         public List<ICustomerObserver> MyObservers = new List<ICustomerObserver>();
 
-        //  Creates new Customer object and adds to the list allCustomers
+        /// <summary>
+        /// Creates a new Customer object, adds to the allCustomers list, and notifies the Customer Observer
+        /// </summary>
+        /// <param name="firstName">The string to be set for firstName</param>
+        /// <param name="lastName">The string to be set for the lastName</param>
+        /// <param name="phoneNumber">The string to be set for the phoneNumber</param>
+        /// <param name="staffDiscount">The bool to be set for staffDiscount</param>
         public void CreateCustomer(string firstName, string lastName, string phoneNumber, bool staffDiscount)
         {
             Customer c = new Customer(firstName, lastName, phoneNumber, staffDiscount);
             allCustomers.Add(c);
-            Investment investment = new Investment(c, 4, 10, 750);
-            Omni omni = new Omni(c, 2, -1000, 10, 300);
-            Everyday everyday = new Everyday(c, 150);
-            c.addtoCustomerAccounts(investment);
-            c.addtoCustomerAccounts(omni);
-            c.addtoCustomerAccounts(everyday);
+            //Investment investment = new Investment(c, 4, 10, 750);
+            //Omni omni = new Omni(c, 2, -1000, 10, 300);
+            //Everyday everyday = new Everyday(c, 150);
+            //c.addtoCustomerAccounts(investment);
+            //c.addtoCustomerAccounts(omni);
+            //c.addtoCustomerAccounts(everyday);
             NotifyCustomerObservers(c);
         }
 
-        //  edits the selected customer if the inputs pass validation
+        /// <summary>
+        /// Edits the selected customer if the inputs pass validation
+        /// </summary>
+        /// <param name="firstName">The string to be set for firstName</param>
+        /// <param name="lastName">The string to be set for the lastName</param>
+        /// <param name="phoneNumber">The string to be set for the phoneNumber</param>
+        /// <param name="staffDiscount">The bool to be set for staffDiscount</param>
+        /// <exception cref="InvalidInputException">Thrown if parameters contain invalid characters</exception>
         public void EditCustomer(string firstName, string lastName, string phoneNumber, bool staffDiscount)
         {
             string errorMessage = "These fields contain invalid characters:";
@@ -65,16 +84,25 @@ namespace BIT706_A2_Campen_5047211
             { throw new InvalidInputException(errorMessage); }
         }
 
-        //  deletes selected customer from allCustomers list
+
+        /// <summary>
+        /// Deletes selected customer from allCustomers list
+        /// </summary>        
         public void DeleteCustomer()
         {
             allCustomers.Remove(selectedCustomer);
         }
 
-        //  getter and setter for AllCustomers
+        /// <summary>
+        /// Getter and setter for AllCustomers list
+        /// </summary>
+        /// <returns>returns List of Customer objects</returns>
         public List<Customer> AllCustomers { get => allCustomers; set => allCustomers = value; }
 
-        // getter and setter for SelectedCustomer
+        /// <summary>
+        /// Getter and setter for SelectedCustomer object
+        /// </summary>
+        /// <returns>returns Customer object</returns>
         public Customer SelectedCustomer
         {
             get
@@ -82,14 +110,43 @@ namespace BIT706_A2_Campen_5047211
                 return selectedCustomer;
             }
             set
-            {
-                
-                    selectedCustomer = value;
-               
+            {                
+                    selectedCustomer = value;              
             }
         }
 
+        /// <summary>
+        /// Attaches Observer to MyObservers List of ICustomerObserver objects
+        /// </summary>
+        /// <param name="obs">ICustomerObserver object to attach</param>
+        public void AttachObserver(ICustomerObserver obs)
+        {
+            MyObservers.Add(obs);
+        }
+
+        /// <summary>
+        /// Notifies Observers about update to Customer object
+        /// </summary>
+        /// <param name="c">Updated Customer object</param>
+        public void NotifyCustomerObservers(Customer c)
+        {
+            foreach (ICustomerObserver obs in MyObservers)
+            {
+                obs.UpdateCustomer(c);
+            }
+        }
+
+        /// <summary>
+        /// Creates new CustomerIterator object
+        /// </summary>
+        /// <returns>Returns Iterator object</returns>
+        public IIterator CreateIterator()
+        {
+            return new CustomerIterator();
+        }
+
         //  Creates test customer data
+
         public void CreateTestData()
         {
             if (allCustomers.Count == 0)
@@ -110,25 +167,6 @@ namespace BIT706_A2_Campen_5047211
             }
 
         }
-
-        public void AttachObserver(ICustomerObserver obs)
-        {
-            MyObservers.Add(obs);
-        }
-
-        public void NotifyCustomerObservers(Customer c)
-        {
-            foreach (ICustomerObserver obs in MyObservers)
-            {
-                obs.UpdateCustomer(c);
-            }
-        }
-
-        public IIterator CreateIterator()
-        {
-            return new CustomerIterator();
-        }
-
 
     }
 }

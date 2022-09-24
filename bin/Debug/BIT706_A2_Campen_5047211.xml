@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BIT706_A2_Campen_5047211</name>
+    </assembly>
+    <members>
+        <member name="T:BIT706_A2_Campen_5047211.AccountController">
+            <summary>
+            Controller for the Account object. 
+            Implements Observer/Subject pattern through IAccountSubject interface
+            Implements Iterator pattern through Iterator interface
+            Serializable class
+            </summary>
+        </member>
+        <member name="M:BIT706_A2_Campen_5047211.AccountController.CreateEverydayAccount(BIT706_A2_Campen_5047211.Customer,System.Double)">
+            <summary>
+            Creates a new Everyday object (child class of Account), adds to the CustomerAccounts list for that Customer, and notifies Account Observers
+            </summary>
+            <param name="cust">Customer object who owns the Everyday object to be created</param>
+            <param name="balance">double value to be set for balance</param>
+        </member>
+        <member name="M:BIT706_A2_Campen_5047211.AccountController.CreateInvestmentAccount(BIT706_A2_Campen_5047211.Customer,System.Double,System.Double,System.Double)">
+            <summary>
+            Creates a new Investment object (child class of Account), adds to the CustomerAccounts list for that Customer, and notifies Account Observers
+            </summary>
+            <param name="cust">Customer object who owns the Investment object to be created</param>
+            <param name="interestRate">double value to be set for interestRate</param>
+            <param name="fee">double value to be set for fee</param>
+            <param name="balance">double value to be set for balance</param>
+        </member>
+        <member name="M:BIT706_A2_Campen_5047211.AccountController.CreateOmniAccount(BIT706_A2_Campen_5047211.Customer,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Creates a new Omni object (child class of Account), adds to the CustomerAccounts list for that Customer, and notifies Account Observers
+            </summary>
+            <param name="cust">Customer object who owns the Omni object to be created</param>
+            <param name="interestRate">double value to be set for interestRate</param>
+            <param name="overdraft">double value to be set for overdraft</param>
+            <param name="fee">double value to be set for fee</param>
+            <param name="balance">double value to be set for balance</param>
+        </member>
+        <member name="P:BIT706_A2_Campen_5047211.AccountController.SelectedAccount">
+            <summary>
+            Getter and setter for selectedAccount object
+            </summary>
+            <returns>returns an Account object</returns>
+        </member>
+        <member name="M:BIT706_A2_Campen_5047211.AccountController.AttachAccountObserver(BIT706_A2_Campen_5047211.IAccountObserver)">
+            <summary>
+            Attaches Observer to MyObservers List of IAccountObserver objects
+            </summary>
+            <param name="obs">ICustomerObserver object to attach</param>
+        </member>
+        <member name="M:BIT706_A2_Campen_5047211.AccountController.NotifyAccountObservers(BIT706_A2_Campen_5047211.Account)">
+            <summary>
+            Notifies Observers about update to Account object
+            </summary>
+            <param name="account">Updated Account object</param>
+        </member>
+        <member name="M:BIT706_A2_Campen_5047211.AccountController.CreateIterator">
+            <summary>
+            Creates new AccountIterator object
+            </summary>
+            <returns>Iterator object</returns>
+        </member>
+        <member name="F:BIT706_A2_Campen_5047211.AddCustomer.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BIT706_A2_Campen_5047211.AddCustomer.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BIT706_A2_Campen_5047211.AddCustomer.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:BIT706_A2_Campen_5047211.CustomerController">
+            <summary>
+            Controller for the Customer object. 
+            Implements Observer/Subject pattern through ICustomerSubject interface
+            Implements Iterator pattern through Iterator interface
+            Serializable class
+            </summary>
+        </member>
+        <member name="M:BIT706_A2_Campen_5047211.CustomerController.CreateCustomer(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Creates a new Customer object, adds to the allCustomers list, and notifies the Customer Observer
+            </summary>
+            <param name="firstName">The string to be set for firstName</param>
+            <param name="lastName">The string to be set for the lastName</param>
+            <param name="phoneNumber">The string to be set for the phoneNumber</param>
+            <param name="staffDiscount">The bool to be set for staffDiscount</param>
+        </member>
+        <member name="M:BIT706_A2_Campen_5047211.CustomerController.EditCustomer(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Edits the selected customer if the inputs pass validation
+            </summary>
+            <param name="firstName">The string to be set for firstName</param>
+            <param name="lastName">The string to be set for the lastName</param>
+            <param name="phoneNumber">The string to be set for the phoneNumber</param>
+            <param name="staffDiscount">The bool to be set for staffDiscount</param>
+            <exception cref="T:BIT706_A2_Campen_5047211.InvalidInputException">Thrown if parameters contain invalid characters</exception>
+        </member>
+        <member name="M:BIT706_A2_Campen_5047211.CustomerController.DeleteCustomer">
+            <summary>
+            Deletes selected customer from allCustomers list
+            </summary>        
+        </member>
+        <member name="P:BIT706_A2_Campen_5047211.CustomerController.AllCustomers">
+            <summary>
+            Getter and setter for AllCustomers list
+            </summary>
+            <returns>returns List of Customer objects</returns>
+        </member>
+        <member name="P:BIT706_A2_Campen_5047211.CustomerController.SelectedCustomer">
+            <summary>
+            Getter and setter for SelectedCustomer object
+            </summary>
+            <returns>returns Customer object</returns>
+        </member>
+        <member name="M:BIT706_A2_Campen_5047211.CustomerController.AttachObserver(BIT706_A2_Campen_5047211.ICustomerObserver)">
+            <summary>
+            Attaches Observer to MyObservers List of ICustomerObserver objects
+            </summary>
+            <param name="obs">ICustomerObserver object to attach</param>
+        </member>
+        <member name="M:BIT706_A2_Campen_5047211.CustomerController.NotifyCustomerObservers(BIT706_A2_Campen_5047211.Customer)">
+            <summary>
+            Notifies Observers about update to Customer object
+            </summary>
+            <param name="c">Updated Customer object</param>
+        </member>
+        <member name="M:BIT706_A2_Campen_5047211.CustomerController.CreateIterator">
+            <summary>
+            Creates new CustomerIterator object
+            </summary>
+            <returns>Returns Iterator object</returns>
+        </member>
+        <member name="F:BIT706_A2_Campen_5047211.CustomerOptions.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BIT706_A2_Campen_5047211.CustomerOptions.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BIT706_A2_Campen_5047211.CustomerOptions.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BIT706_A2_Campen_5047211.Dashboard.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BIT706_A2_Campen_5047211.Dashboard.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BIT706_A2_Campen_5047211.Dashboard.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BIT706_A2_Campen_5047211.EditCustomer.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BIT706_A2_Campen_5047211.EditCustomer.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BIT706_A2_Campen_5047211.EditCustomer.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BIT706_A2_Campen_5047211.ManageAccounts.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BIT706_A2_Campen_5047211.ManageAccounts.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BIT706_A2_Campen_5047211.ManageAccounts.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BIT706_A2_Campen_5047211.NewAccount.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BIT706_A2_Campen_5047211.NewAccount.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BIT706_A2_Campen_5047211.NewAccount.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BIT706_A2_Campen_5047211.ParentForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BIT706_A2_Campen_5047211.ParentForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BIT706_A2_Campen_5047211.ParentForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:BIT706_A2_Campen_5047211.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="F:BIT706_A2_Campen_5047211.SelectCustomer.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BIT706_A2_Campen_5047211.SelectCustomer.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BIT706_A2_Campen_5047211.SelectCustomer.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:BIT706_A2_Campen_5047211.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:BIT706_A2_Campen_5047211.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:BIT706_A2_Campen_5047211.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

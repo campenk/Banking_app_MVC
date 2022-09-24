@@ -27,7 +27,7 @@ namespace BIT706_A2_Campen_5047211
             AccountSingleton.setInstance((AccountSingleton)formatter.Deserialize(stream));
             stream.Close();
 
-            //control.CreateTestData();
+            control.CreateTestData();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             var main_form = new Dashboard();

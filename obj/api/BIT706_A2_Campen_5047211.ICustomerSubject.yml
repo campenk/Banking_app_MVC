@@ -1,0 +1,122 @@
+### YamlMime:ManagedReference
+items:
+- uid: BIT706_A2_Campen_5047211.ICustomerSubject
+  commentId: T:BIT706_A2_Campen_5047211.ICustomerSubject
+  id: ICustomerSubject
+  parent: BIT706_A2_Campen_5047211
+  children:
+  - BIT706_A2_Campen_5047211.ICustomerSubject.AttachObserver(BIT706_A2_Campen_5047211.ICustomerObserver)
+  - BIT706_A2_Campen_5047211.ICustomerSubject.NotifyCustomerObservers(BIT706_A2_Campen_5047211.Customer)
+  langs:
+  - csharp
+  - vb
+  name: ICustomerSubject
+  nameWithType: ICustomerSubject
+  fullName: BIT706_A2_Campen_5047211.ICustomerSubject
+  type: Interface
+  source:
+    remote:
+      path: Interface.cs
+      branch: Serialization
+      repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
+    id: ICustomerSubject
+    path: Interface.cs
+    startLine: 13
+  assemblies:
+  - BIT706_A2_Campen_5047211
+  namespace: BIT706_A2_Campen_5047211
+  syntax:
+    content: public interface ICustomerSubject
+    content.vb: Public Interface ICustomerSubject
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: BIT706_A2_Campen_5047211.ICustomerSubject.AttachObserver(BIT706_A2_Campen_5047211.ICustomerObserver)
+  commentId: M:BIT706_A2_Campen_5047211.ICustomerSubject.AttachObserver(BIT706_A2_Campen_5047211.ICustomerObserver)
+  id: AttachObserver(BIT706_A2_Campen_5047211.ICustomerObserver)
+  parent: BIT706_A2_Campen_5047211.ICustomerSubject
+  langs:
+  - csharp
+  - vb
+  name: AttachObserver(ICustomerObserver)
+  nameWithType: ICustomerSubject.AttachObserver(ICustomerObserver)
+  fullName: BIT706_A2_Campen_5047211.ICustomerSubject.AttachObserver(BIT706_A2_Campen_5047211.ICustomerObserver)
+  type: Method
+  source:
+    remote:
+      path: Interface.cs
+      branch: Serialization
+      repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
+    id: AttachObserver
+    path: Interface.cs
+    startLine: 15
+  assemblies:
+  - BIT706_A2_Campen_5047211
+  namespace: BIT706_A2_Campen_5047211
+  syntax:
+    content: void AttachObserver(ICustomerObserver obs)
+    parameters:
+    - id: obs
+      type: BIT706_A2_Campen_5047211.ICustomerObserver
+    content.vb: Sub AttachObserver(obs As ICustomerObserver)
+  overload: BIT706_A2_Campen_5047211.ICustomerSubject.AttachObserver*
+- uid: BIT706_A2_Campen_5047211.ICustomerSubject.NotifyCustomerObservers(BIT706_A2_Campen_5047211.Customer)
+  commentId: M:BIT706_A2_Campen_5047211.ICustomerSubject.NotifyCustomerObservers(BIT706_A2_Campen_5047211.Customer)
+  id: NotifyCustomerObservers(BIT706_A2_Campen_5047211.Customer)
+  parent: BIT706_A2_Campen_5047211.ICustomerSubject
+  langs:
+  - csharp
+  - vb
+  name: NotifyCustomerObservers(Customer)
+  nameWithType: ICustomerSubject.NotifyCustomerObservers(Customer)
+  fullName: BIT706_A2_Campen_5047211.ICustomerSubject.NotifyCustomerObservers(BIT706_A2_Campen_5047211.Customer)
+  type: Method
+  source:
+    remote:
+      path: Interface.cs
+      branch: Serialization
+      repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
+    id: NotifyCustomerObservers
+    path: Interface.cs
+    startLine: 16
+  assemblies:
+  - BIT706_A2_Campen_5047211
+  namespace: BIT706_A2_Campen_5047211
+  syntax:
+    content: void NotifyCustomerObservers(Customer c)
+    parameters:
+    - id: c
+      type: BIT706_A2_Campen_5047211.Customer
+    content.vb: Sub NotifyCustomerObservers(c As Customer)
+  overload: BIT706_A2_Campen_5047211.ICustomerSubject.NotifyCustomerObservers*
+references:
+- uid: BIT706_A2_Campen_5047211
+  commentId: N:BIT706_A2_Campen_5047211
+  name: BIT706_A2_Campen_5047211
+  nameWithType: BIT706_A2_Campen_5047211
+  fullName: BIT706_A2_Campen_5047211
+- uid: BIT706_A2_Campen_5047211.ICustomerSubject.AttachObserver*
+  commentId: Overload:BIT706_A2_Campen_5047211.ICustomerSubject.AttachObserver
+  name: AttachObserver
+  nameWithType: ICustomerSubject.AttachObserver
+  fullName: BIT706_A2_Campen_5047211.ICustomerSubject.AttachObserver
+- uid: BIT706_A2_Campen_5047211.ICustomerObserver
+  commentId: T:BIT706_A2_Campen_5047211.ICustomerObserver
+  parent: BIT706_A2_Campen_5047211
+  name: ICustomerObserver
+  nameWithType: ICustomerObserver
+  fullName: BIT706_A2_Campen_5047211.ICustomerObserver
+- uid: BIT706_A2_Campen_5047211.ICustomerSubject.NotifyCustomerObservers*
+  commentId: Overload:BIT706_A2_Campen_5047211.ICustomerSubject.NotifyCustomerObservers
+  name: NotifyCustomerObservers
+  nameWithType: ICustomerSubject.NotifyCustomerObservers
+  fullName: BIT706_A2_Campen_5047211.ICustomerSubject.NotifyCustomerObservers
+- uid: BIT706_A2_Campen_5047211.Customer
+  commentId: T:BIT706_A2_Campen_5047211.Customer
+  parent: BIT706_A2_Campen_5047211
+  name: Customer
+  nameWithType: Customer
+  fullName: BIT706_A2_Campen_5047211.Customer
