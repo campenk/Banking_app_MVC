@@ -25,7 +25,7 @@ items:
   source:
     remote:
       path: Models/Everyday.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: Everyday
     path: Models/Everyday.cs
@@ -86,7 +86,7 @@ items:
   source:
     remote:
       path: Models/Everyday.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: .ctor
     path: Models/Everyday.cs
@@ -121,7 +121,7 @@ items:
   source:
     remote:
       path: Models/Everyday.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: AccountInfo
     path: Models/Everyday.cs
@@ -156,7 +156,7 @@ items:
   source:
     remote:
       path: Models/Everyday.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: AccountName
     path: Models/Everyday.cs
@@ -191,7 +191,7 @@ items:
   source:
     remote:
       path: Models/Everyday.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: TransactionString
     path: Models/Everyday.cs
@@ -226,7 +226,7 @@ items:
   source:
     remote:
       path: Models/Everyday.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: Withdrawal
     path: Models/Everyday.cs
@@ -262,7 +262,7 @@ items:
   source:
     remote:
       path: Models/Everyday.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: Deposit
     path: Models/Everyday.cs
@@ -298,7 +298,7 @@ items:
   source:
     remote:
       path: Models/Everyday.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: AddInterest
     path: Models/Everyday.cs
@@ -331,7 +331,7 @@ items:
   source:
     remote:
       path: Models/Everyday.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: ToString
     path: Models/Everyday.cs
@@ -366,7 +366,7 @@ items:
   source:
     remote:
       path: Models/Everyday.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: IsDigitPresent
     path: Models/Everyday.cs
@@ -404,7 +404,7 @@ items:
   source:
     remote:
       path: Models/Everyday.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: IsLetterPresent
     path: Models/Everyday.cs

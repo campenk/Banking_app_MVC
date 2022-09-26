@@ -111,7 +111,7 @@ namespace BIT706_A2_Campen_5047211
             // buttonInterest
             // 
             this.buttonInterest.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonInterest.Location = new System.Drawing.Point(528, 127);
+            this.buttonInterest.Location = new System.Drawing.Point(644, 127);
             this.buttonInterest.Name = "buttonInterest";
             this.buttonInterest.Size = new System.Drawing.Size(129, 23);
             this.buttonInterest.TabIndex = 27;
@@ -123,7 +123,7 @@ namespace BIT706_A2_Campen_5047211
             // buttonWithdrawal
             // 
             this.buttonWithdrawal.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonWithdrawal.Location = new System.Drawing.Point(393, 127);
+            this.buttonWithdrawal.Location = new System.Drawing.Point(374, 127);
             this.buttonWithdrawal.Name = "buttonWithdrawal";
             this.buttonWithdrawal.Size = new System.Drawing.Size(129, 23);
             this.buttonWithdrawal.TabIndex = 26;
@@ -202,11 +202,13 @@ namespace BIT706_A2_Campen_5047211
             // 
             this.labelAccounts.AutoSize = true;
             this.labelAccounts.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAccounts.Location = new System.Drawing.Point(63, 148);
+            this.labelAccounts.Location = new System.Drawing.Point(27, 148);
+            this.labelAccounts.MinimumSize = new System.Drawing.Size(150, 0);
             this.labelAccounts.Name = "labelAccounts";
-            this.labelAccounts.Size = new System.Drawing.Size(63, 15);
+            this.labelAccounts.Size = new System.Drawing.Size(150, 15);
             this.labelAccounts.TabIndex = 19;
             this.labelAccounts.Text = "Accounts";
+            this.labelAccounts.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // listBoxAccounts
             // 
@@ -265,7 +267,7 @@ namespace BIT706_A2_Campen_5047211
             // buttonTransfer
             // 
             this.buttonTransfer.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTransfer.Location = new System.Drawing.Point(682, 127);
+            this.buttonTransfer.Location = new System.Drawing.Point(509, 127);
             this.buttonTransfer.Name = "buttonTransfer";
             this.buttonTransfer.Size = new System.Drawing.Size(129, 23);
             this.buttonTransfer.TabIndex = 35;

@@ -20,16 +20,7 @@ namespace BIT706_A2_Campen_5047211
             customer = newCustomer;
             interestRate = newInterestRate;
             overdraft = newOverdraft;
-
-            //  TODO: Staff discount should be processed at the point of charging fees, not here
-            if (customer.StaffDiscount == true)
-            {
-                fee = newFee / 2;
-            }
-            else
-            {
-                fee = newFee;
-            }
+            fee = newFee;           
             balance = newBalance;
         }
 
@@ -50,7 +41,7 @@ namespace BIT706_A2_Campen_5047211
 
         public override void Withdrawal(double withdrawal)
         {
-            if ((balance - withdrawal) < overdraft)
+            if ((balance - withdrawal) < -overdraft)
             {
                 double transactionFee = fee;
                 if (this.CustomerOnAccount.StaffDiscount == true)
@@ -76,7 +67,16 @@ namespace BIT706_A2_Campen_5047211
 
         public override void AddInterest()
         {
-            double interest = (balance - 1000) * (interestRate / 100);
+            double interest;
+            if (balance - 1000 > 0)
+            {
+                interest = (balance - 1000) * (interestRate / 100);
+            }
+            else
+            {
+                interest = 0;
+            }
+           
             Console.WriteLine(interest.ToString());
             balance += interest;
             transactionString = "Omni " + accountID + ";  add interest $" + interest + ";  balance $" + Math.Round(balance, 2, MidpointRounding.AwayFromZero);

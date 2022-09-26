@@ -21,6 +21,7 @@ namespace BIT706_A2_Campen_5047211
             InitializeComponent();
             RefreshList();
             Update();
+            labelAccounts.Text = customerController.SelectedCustomer.FullName + " Accounts";
         }
 
         /******************
@@ -62,6 +63,8 @@ namespace BIT706_A2_Campen_5047211
             buttonSubmit.Visible = b;
             labelError.Visible = false;
             gbTransactionInfo.Visible = b;
+            labelRecipientAccount.Visible = !b;
+            cbRecipientAccount.Visible = !b;
         }
 
         private void resetTransactionDetails()
@@ -112,8 +115,7 @@ namespace BIT706_A2_Campen_5047211
         {
             showTransactionDetails(false);
             accountController.SelectedAccount.AddInterest();
-            listBoxRecentTransactions.Items.Clear();
-            listBoxRecentTransactions.Items.Add(accountController.SelectedAccount.TransactionString());
+            UpdateRecentTransactions();
             labelAccountInfo.Text = accountController.SelectedAccount.AccountInfo();
         }
 
@@ -138,9 +140,7 @@ namespace BIT706_A2_Campen_5047211
             if (buttonSubmit.Tag.ToString() == "deposit" && Double.TryParse(textBoxAmount.Text, out userInput) && userInput > 0)
             {
                 accountController.SelectedAccount.Deposit(userInput);
-                listBoxRecentTransactions.Items.Clear();
-                string transactionString = accountController.SelectedAccount.TransactionString();
-                listBoxRecentTransactions.Items.Add(transactionString);
+                UpdateRecentTransactions();
                 resetTransactionDetails();
             }
             else if (buttonSubmit.Tag.ToString() == "withdrawal" && Double.TryParse(textBoxAmount.Text, out userInput) && userInput > 0)
@@ -148,13 +148,12 @@ namespace BIT706_A2_Campen_5047211
                 try
                 {
                     accountController.SelectedAccount.Withdrawal(userInput);
-                    listBoxRecentTransactions.Items.Clear();
-                    string transactionString = accountController.SelectedAccount.TransactionString();
-                    listBoxRecentTransactions.Items.Add(transactionString); 
+                    UpdateRecentTransactions();
                     resetTransactionDetails();
                 }
                 catch (FailedWithdrawalException ex)
                 {
+                    UpdateRecentTransactions();
                     labelError.Visible = true;
                     MessageBox.Show(ex.Message);
                 }
@@ -166,13 +165,12 @@ namespace BIT706_A2_Campen_5047211
                     accountController.SelectedAccount.Withdrawal(userInput);
                     Account recipientAccount = (Account)cbRecipientAccount.SelectedItem;
                     recipientAccount.Deposit(userInput);
-                    listBoxRecentTransactions.Items.Clear();
-                    string transactionString = accountController.SelectedAccount.TransactionString();
-                    listBoxRecentTransactions.Items.Add(transactionString); 
+                    UpdateRecentTransactions();
                     resetTransactionDetails();
                 }
                 catch (FailedWithdrawalException ex)
                 {
+                    UpdateRecentTransactions();
                     labelError.Visible = true;
                     MessageBox.Show(ex.Message);
                 }
@@ -217,6 +215,15 @@ namespace BIT706_A2_Campen_5047211
 
             }
 
+        }
+
+        private void UpdateRecentTransactions()
+        {
+            listBoxRecentTransactions.Items.Clear();
+            string transactionString = accountController.SelectedAccount.TransactionString();
+            listBoxRecentTransactions.Items.Add(transactionString);
+
+            
         }
     }
 }

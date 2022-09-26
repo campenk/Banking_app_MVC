@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: Forms/ManageAccounts.Designer.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: ManageAccounts
     path: Forms/ManageAccounts.Designer.cs
@@ -585,7 +585,7 @@ items:
   source:
     remote:
       path: Forms/ManageAccounts.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: .ctor
     path: Forms/ManageAccounts.cs
@@ -615,11 +615,11 @@ items:
   source:
     remote:
       path: Forms/ManageAccounts.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: UpdateAccount
     path: Forms/ManageAccounts.cs
-    startLine: 74
+    startLine: 77
   assemblies:
   - BIT706_A2_Campen_5047211
   namespace: BIT706_A2_Campen_5047211
@@ -648,11 +648,11 @@ items:
   source:
     remote:
       path: Forms/ManageAccounts.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: RefreshList
     path: Forms/ManageAccounts.cs
-    startLine: 208
+    startLine: 206
   assemblies:
   - BIT706_A2_Campen_5047211
   namespace: BIT706_A2_Campen_5047211
@@ -678,7 +678,7 @@ items:
   source:
     remote:
       path: Forms/ManageAccounts.Designer.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: Dispose
     path: Forms/ManageAccounts.Designer.cs

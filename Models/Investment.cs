@@ -20,6 +20,7 @@ namespace BIT706_A2_Campen_5047211
             customer = newCustomer;
             interestRate = newInterestRate;            
             balance = newBalance;
+            fee = newFee;
         }
         public override string AccountInfo()
         {

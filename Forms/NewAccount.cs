@@ -175,7 +175,7 @@ namespace BIT706_A2_Campen_5047211
         {
             //  show message box with success message and option to return to CustomerOptions menu
             string message = "Would you like to return to the Manage Accounts menu?";
-            string caption = "New customer created successfully!";
+            string caption = "New account created successfully!";
             DialogResult result;
             result = MessageBox.Show(message, caption, MessageBoxButtons.YesNo);
 

@@ -5,6 +5,7 @@ items:
   id: BIT706_A2_Campen_5047211
   children:
   - BIT706_A2_Campen_5047211.Account
+  - BIT706_A2_Campen_5047211.AccountTestClass
   - BIT706_A2_Campen_5047211.AddCustomer
   - BIT706_A2_Campen_5047211.Customer
   - BIT706_A2_Campen_5047211.CustomerController
@@ -35,6 +36,11 @@ items:
   assemblies:
   - BIT706_A2_Campen_5047211
 references:
+- uid: BIT706_A2_Campen_5047211.AccountTestClass
+  commentId: T:BIT706_A2_Campen_5047211.AccountTestClass
+  name: AccountTestClass
+  nameWithType: AccountTestClass
+  fullName: BIT706_A2_Campen_5047211.AccountTestClass
 - uid: BIT706_A2_Campen_5047211.Account
   commentId: T:BIT706_A2_Campen_5047211.Account
   parent: BIT706_A2_Campen_5047211

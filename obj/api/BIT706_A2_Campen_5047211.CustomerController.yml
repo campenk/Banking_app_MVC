@@ -25,7 +25,7 @@ items:
   source:
     remote:
       path: Controllers/CustomerController.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: CustomerController
     path: Controllers/CustomerController.cs
@@ -81,7 +81,7 @@ items:
   source:
     remote:
       path: Controllers/CustomerController.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: MyObservers
     path: Controllers/CustomerController.cs
@@ -112,7 +112,7 @@ items:
   source:
     remote:
       path: Controllers/CustomerController.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: CreateCustomer
     path: Controllers/CustomerController.cs
@@ -157,7 +157,7 @@ items:
   source:
     remote:
       path: Controllers/CustomerController.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: EditCustomer
     path: Controllers/CustomerController.cs
@@ -206,7 +206,7 @@ items:
   source:
     remote:
       path: Controllers/CustomerController.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: DeleteCustomer
     path: Controllers/CustomerController.cs
@@ -238,7 +238,7 @@ items:
   source:
     remote:
       path: Controllers/CustomerController.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: AllCustomers
     path: Controllers/CustomerController.cs
@@ -276,7 +276,7 @@ items:
   source:
     remote:
       path: Controllers/CustomerController.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: SelectedCustomer
     path: Controllers/CustomerController.cs
@@ -314,7 +314,7 @@ items:
   source:
     remote:
       path: Controllers/CustomerController.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: AttachObserver
     path: Controllers/CustomerController.cs
@@ -352,7 +352,7 @@ items:
   source:
     remote:
       path: Controllers/CustomerController.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: NotifyCustomerObservers
     path: Controllers/CustomerController.cs
@@ -390,7 +390,7 @@ items:
   source:
     remote:
       path: Controllers/CustomerController.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: CreateIterator
     path: Controllers/CustomerController.cs
@@ -425,7 +425,7 @@ items:
   source:
     remote:
       path: Controllers/CustomerController.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: CreateTestData
     path: Controllers/CustomerController.cs

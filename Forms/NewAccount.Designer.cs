@@ -111,7 +111,7 @@ namespace BIT706_A2_Campen_5047211
             this.tbBalance.Location = new System.Drawing.Point(181, 356);
             this.tbBalance.Name = "tbBalance";
             this.tbBalance.Size = new System.Drawing.Size(121, 20);
-            this.tbBalance.TabIndex = 12;
+            this.tbBalance.TabIndex = 6;
             this.tbBalance.Visible = false;
             // 
             // bSubmit
@@ -119,7 +119,7 @@ namespace BIT706_A2_Campen_5047211
             this.bSubmit.Location = new System.Drawing.Point(181, 413);
             this.bSubmit.Name = "bSubmit";
             this.bSubmit.Size = new System.Drawing.Size(75, 23);
-            this.bSubmit.TabIndex = 13;
+            this.bSubmit.TabIndex = 7;
             this.bSubmit.Text = "Submit";
             this.bSubmit.UseVisualStyleBackColor = true;
             this.bSubmit.Visible = false;
@@ -130,7 +130,7 @@ namespace BIT706_A2_Campen_5047211
             this.bReset.Location = new System.Drawing.Point(333, 413);
             this.bReset.Name = "bReset";
             this.bReset.Size = new System.Drawing.Size(75, 23);
-            this.bReset.TabIndex = 14;
+            this.bReset.TabIndex = 8;
             this.bReset.Text = "Reset";
             this.bReset.UseVisualStyleBackColor = true;
             this.bReset.Visible = false;
@@ -141,7 +141,7 @@ namespace BIT706_A2_Campen_5047211
             this.tbInterestRate.Location = new System.Drawing.Point(181, 182);
             this.tbInterestRate.Name = "tbInterestRate";
             this.tbInterestRate.Size = new System.Drawing.Size(121, 20);
-            this.tbInterestRate.TabIndex = 15;
+            this.tbInterestRate.TabIndex = 4;
             this.tbInterestRate.Visible = false;
             // 
             // tbFee
@@ -149,7 +149,7 @@ namespace BIT706_A2_Campen_5047211
             this.tbFee.Location = new System.Drawing.Point(181, 240);
             this.tbFee.Name = "tbFee";
             this.tbFee.Size = new System.Drawing.Size(121, 20);
-            this.tbFee.TabIndex = 16;
+            this.tbFee.TabIndex = 3;
             this.tbFee.Visible = false;
             // 
             // tbOverdraft
@@ -157,7 +157,7 @@ namespace BIT706_A2_Campen_5047211
             this.tbOverdraft.Location = new System.Drawing.Point(181, 298);
             this.tbOverdraft.Name = "tbOverdraft";
             this.tbOverdraft.Size = new System.Drawing.Size(121, 20);
-            this.tbOverdraft.TabIndex = 17;
+            this.tbOverdraft.TabIndex = 5;
             this.tbOverdraft.Visible = false;
             // 
             // bBack
@@ -165,7 +165,7 @@ namespace BIT706_A2_Campen_5047211
             this.bBack.Location = new System.Drawing.Point(39, 73);
             this.bBack.Name = "bBack";
             this.bBack.Size = new System.Drawing.Size(161, 23);
-            this.bBack.TabIndex = 38;
+            this.bBack.TabIndex = 10;
             this.bBack.Text = "< Back to Customer Accounts";
             this.bBack.UseVisualStyleBackColor = true;
             this.bBack.Click += new System.EventHandler(this.bBack_Click);

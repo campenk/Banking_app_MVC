@@ -4,6 +4,8 @@
   items:
   - uid: BIT706_A2_Campen_5047211.Account
     name: Account
+  - uid: BIT706_A2_Campen_5047211.AccountTestClass
+    name: AccountTestClass
   - uid: BIT706_A2_Campen_5047211.AddCustomer
     name: AddCustomer
   - uid: BIT706_A2_Campen_5047211.Customer

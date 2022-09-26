@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountIterator.cs" />
+    <Compile Include="AccountTestClass.cs" />
     <Compile Include="CustomerIterator.cs" />
     <Compile Include="CustomerSingleton.cs" />
     <Compile Include="Models\Account.cs" />

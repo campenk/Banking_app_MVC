@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: Forms/EditCustomer.Designer.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: EditCustomer
     path: Forms/EditCustomer.Designer.cs
@@ -583,7 +583,7 @@ items:
   source:
     remote:
       path: Forms/EditCustomer.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: .ctor
     path: Forms/EditCustomer.cs
@@ -613,7 +613,7 @@ items:
   source:
     remote:
       path: Forms/EditCustomer.Designer.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: Dispose
     path: Forms/EditCustomer.Designer.cs

@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: Forms/NewAccount.Designer.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: NewAccount
     path: Forms/NewAccount.Designer.cs
@@ -583,7 +583,7 @@ items:
   source:
     remote:
       path: Forms/NewAccount.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: .ctor
     path: Forms/NewAccount.cs
@@ -613,7 +613,7 @@ items:
   source:
     remote:
       path: Forms/NewAccount.Designer.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: Dispose
     path: Forms/NewAccount.Designer.cs

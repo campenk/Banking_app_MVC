@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: Forms/ParentForm.Designer.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: ParentForm
     path: Forms/ParentForm.Designer.cs
@@ -590,7 +590,7 @@ items:
   source:
     remote:
       path: Forms/ParentForm.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: .ctor
     path: Forms/ParentForm.cs
@@ -620,7 +620,7 @@ items:
   source:
     remote:
       path: Forms/ParentForm.Designer.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: Dispose
     path: Forms/ParentForm.Designer.cs

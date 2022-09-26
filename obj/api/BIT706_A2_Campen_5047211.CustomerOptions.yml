@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: Forms/CustomerOptions.Designer.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: CustomerOptions
     path: Forms/CustomerOptions.Designer.cs
@@ -586,7 +586,7 @@ items:
   source:
     remote:
       path: Forms/CustomerOptions.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: .ctor
     path: Forms/CustomerOptions.cs
@@ -616,7 +616,7 @@ items:
   source:
     remote:
       path: Forms/CustomerOptions.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: UpdateCustomer
     path: Forms/CustomerOptions.cs
@@ -651,7 +651,7 @@ items:
   source:
     remote:
       path: Forms/CustomerOptions.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: RefreshList
     path: Forms/CustomerOptions.cs
@@ -681,7 +681,7 @@ items:
   source:
     remote:
       path: Forms/CustomerOptions.Designer.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: Dispose
     path: Forms/CustomerOptions.Designer.cs

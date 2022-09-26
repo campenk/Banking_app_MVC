@@ -12,7 +12,7 @@
           "hash": "kCrEMYxdf567EBBCYsZQ9NVXDe/x18lvnhQ14TIEb7A="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -24,7 +24,7 @@
           "hash": "wz9k3hyM3tHKp9rtUjqOCD3oiu7Bu0aAcRChQIlM9lE="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -48,7 +48,7 @@
           "hash": "gq9xaOzMncL45nGydu7uXuKWBy7Alh9axQMn7EpSKUg="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -57,10 +57,22 @@
       "output": {
         ".html": {
           "relative_path": "api/BIT706_A2_Campen_5047211.Account.html",
-          "hash": "KV2bGfX0yFR4B+zqUetyj7bARrMNXSSIwxgmvFfbexk="
+          "hash": "k7nLrIc9potxiNpklWn8B/ueOTT15bF6SaxiWw5wgGw="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/BIT706_A2_Campen_5047211.AccountTestClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BIT706_A2_Campen_5047211.AccountTestClass.html",
+          "hash": "3+EAnyH44wTzM8AZuuORLbbZ35DDAdT6yt4jgzHaadg="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -69,10 +81,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BIT706_A2_Campen_5047211.AddCustomer.html",
-          "hash": "p12wfPzuAYyeG4FYW3nFH5StB2WFZ0liUjzk2tfim48="
+          "hash": "5KWoV7fIBMLm6PBx4EtFw2HSZBZrebyUUuRuEkpFCok="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -81,10 +93,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BIT706_A2_Campen_5047211.Customer.html",
-          "hash": "ItEIXWst6eagtfTBwzEqcbj/2jtfKqTFr3dSX1KShNU="
+          "hash": "wa/pDMG0n/9tTR1POuLCSX7qdqaIAoDAWEJMTyhZuMU="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -93,10 +105,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BIT706_A2_Campen_5047211.CustomerController.html",
-          "hash": "NhxCuev1SipcZYYaey4VcHuO7KWYN9KI9kb3yfIpxec="
+          "hash": "0k8MPHjyTNaxZ2hgH8ebONHq1s84WBTNeQAMZMwvtNE="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -105,10 +117,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BIT706_A2_Campen_5047211.CustomerOptions.html",
-          "hash": "7v/uH2zEbZ4O0jVo9CNiNqy6y645NwOdt0VCVOZ05PU="
+          "hash": "oa/kVGYumZB7jx5k9HCt5rOGEBLyCgiLRdAyHDFbeNs="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -117,10 +129,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BIT706_A2_Campen_5047211.Dashboard.html",
-          "hash": "FgeZHMZwV393V3UA1+OB+cFzqyN30GfCMTbShsewiCg="
+          "hash": "dq8IvZRHIvTWgyyv1GroFtWomy1NUj1uS5uLCflOaJ8="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -129,10 +141,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BIT706_A2_Campen_5047211.EditCustomer.html",
-          "hash": "Q2PMB1XpKQN4Q0WDfubA43f93WhWXwS1fu/fNWjaCVE="
+          "hash": "AECM7cUX6DtADV68nnTGxG8NOLZkb5GjlQCb1A6PrBg="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -141,10 +153,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BIT706_A2_Campen_5047211.Everyday.html",
-          "hash": "bEzkPkcowYNR2rA1gycQYd5rosUaST40vnyZA8AOTdw="
+          "hash": "MmLiSkgoQWsgk7xHx+5tbsCK7l3dGQTSZbOTqHwO4es="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -153,10 +165,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BIT706_A2_Campen_5047211.FailedWithdrawalException.html",
-          "hash": "2K+56c7rH4MVR/jW4xUXCPUVDnAYPeCMG19DSw4D60s="
+          "hash": "WorCK++xzIXlQ4cDLeNZR6GzcjO3yc3aJf/9H4VwFiQ="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -165,10 +177,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BIT706_A2_Campen_5047211.IAccountObserver.html",
-          "hash": "RtgjaFSVtc1kcWDH3mzOuq/rTHX9w0YMbI2XhxP29Tw="
+          "hash": "56rYDD8X45xnQxCyBtgkNxRrC4TPmAGSJ9yLWtju0cE="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -177,10 +189,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BIT706_A2_Campen_5047211.IAccountSubject.html",
-          "hash": "Zo7ZCObC+uUR/BnsoO8fAIuUfXZFDQUkRlWKW2yzrb4="
+          "hash": "hBPzNjKDrRMvoWyzWAD18EGJls/RLWJc7WXtf8373ng="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -189,10 +201,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BIT706_A2_Campen_5047211.ICustomerObserver.html",
-          "hash": "X6Z9H2t6Kp+k0ieALUYlNRc0q22XOEtlJDigCJc1FRI="
+          "hash": "kwwH21CBjszzkKnc6cZEYMQwnKcNOUzy6yBtGX04Gn8="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -201,10 +213,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BIT706_A2_Campen_5047211.ICustomerSubject.html",
-          "hash": "CCktbq2TovNpuEsZFnYVmyiuDtEykr7v9+WUzMFm6D0="
+          "hash": "IN/1XnDExDgPia9fpciOVlKwqZzcrqk19jQ2P5/gk7g="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -213,10 +225,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BIT706_A2_Campen_5047211.IIterator.html",
-          "hash": "Cdvc5ikcjV6TvOgNZ66KTeupR4Q6a6ioN/7/39a5Dn4="
+          "hash": "9JJVjSo2KXXCye2l0knOdONeA5JzaVqWsi6jTOpM44U="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -225,10 +237,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BIT706_A2_Campen_5047211.InvalidInputException.html",
-          "hash": "7KOrJOqYGq2oBcAAgN6+ejlV1gb9jaFgseWlDwI1cGk="
+          "hash": "mgpEP9rc3P1QIco4AbzWv+uQua0YIoSh2Jce1/Uvlhg="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -237,10 +249,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BIT706_A2_Campen_5047211.Investment.html",
-          "hash": "m35BZRZKXKEeerEUfb1aWWX6k0bUleTpm1XoE2nda4U="
+          "hash": "+Zr1NHTxOmnp7NBeJcc3AENXcfUvGW8xbcSs4RzuOvI="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -249,10 +261,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BIT706_A2_Campen_5047211.ManageAccounts.html",
-          "hash": "mKqb4jCncbcy49YsDSN5/kBR+JmztfleLU5zYk4iBl8="
+          "hash": "ffzmbY2W2RbQHMeDkG/SN1oTkf+xFL0tUurvNts9xck="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -261,10 +273,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BIT706_A2_Campen_5047211.NewAccount.html",
-          "hash": "RX5qD421BgH8ayZHb+dlBXuLEcX74gkx5MrHwpTQG7Q="
+          "hash": "NgyjBlIJnaE+c9u2qKo84TKJLXrJvdKyKNrT+KVzcG0="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -273,10 +285,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BIT706_A2_Campen_5047211.Omni.html",
-          "hash": "uiqIprf7JWg8p6APlzyHSLqpL9z+sFp0wGVVG8TTNNg="
+          "hash": "zKcULP8P2Fs7MQsy/L4refnHbKWkESUW/a8bRjEPqsU="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -285,10 +297,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BIT706_A2_Campen_5047211.ParentForm.html",
-          "hash": "olxn0d3PF0TrYftAWay9uHNFwiMTP64DGip7g3AJsIU="
+          "hash": "PMAPepOouocmQ/HI3TG4NY/iqg/RFb3aOBoafASQI0I="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -297,10 +309,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BIT706_A2_Campen_5047211.SelectCustomer.html",
-          "hash": "AEt82w5YdbcEIELyfwpV9Kl85ZQuKcF7D+tF1ITNftE="
+          "hash": "e2hkA20yxK1lIvsgvepdRxjv29nIq25M48KigtJRMXo="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -309,10 +321,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BIT706_A2_Campen_5047211.html",
-          "hash": "oubNnfL/S/vRaQjNl1zChqSUnL7GSsPQvY5k1UBZI2E="
+          "hash": "15THJjX0oaxrQqhLWftuKdkhhH60Xoyjg4w5RZ2XDEA="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -321,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "GDvygCb2zJkbMOK2WbYZdLuodYmM98uDQoTM4O4kj3E="
+          "hash": "7EC95syt4Er+wmc+SfD3vsjikt/neEefF7R4jLWZEf8="
         }
       },
       "is_incremental": false,
@@ -343,25 +355,23 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because last build info is missing.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "NoAvailableBuildCache"
+        "skipped_file_count": 0
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 0
+          "skipped_file_count": 3
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 22,
-          "skipped_file_count": 0
+          "total_file_count": 23,
+          "skipped_file_count": 23
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
@@ -374,8 +384,8 @@
     },
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0

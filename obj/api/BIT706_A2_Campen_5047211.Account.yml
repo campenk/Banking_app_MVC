@@ -34,7 +34,7 @@ items:
   source:
     remote:
       path: Models/Account.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: Account
     path: Models/Account.cs
@@ -54,6 +54,7 @@ items:
   inheritance:
   - System.Object
   derivedClasses:
+  - BIT706_A2_Campen_5047211.AccountTestClass
   - BIT706_A2_Campen_5047211.Everyday
   - BIT706_A2_Campen_5047211.Investment
   - BIT706_A2_Campen_5047211.Omni
@@ -91,7 +92,7 @@ items:
   source:
     remote:
       path: Models/Account.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: nextID
     path: Models/Account.cs
@@ -124,7 +125,7 @@ items:
   source:
     remote:
       path: Models/Account.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: accountID
     path: Models/Account.cs
@@ -155,7 +156,7 @@ items:
   source:
     remote:
       path: Models/Account.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: customer
     path: Models/Account.cs
@@ -186,7 +187,7 @@ items:
   source:
     remote:
       path: Models/Account.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: balance
     path: Models/Account.cs
@@ -217,7 +218,7 @@ items:
   source:
     remote:
       path: Models/Account.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: custControl
     path: Models/Account.cs
@@ -248,7 +249,7 @@ items:
   source:
     remote:
       path: Models/Account.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: .ctor
     path: Models/Account.cs
@@ -278,7 +279,7 @@ items:
   source:
     remote:
       path: Models/Account.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: .ctor
     path: Models/Account.cs
@@ -311,7 +312,7 @@ items:
   source:
     remote:
       path: Models/Account.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: AccountName
     path: Models/Account.cs
@@ -345,7 +346,7 @@ items:
   source:
     remote:
       path: Models/Account.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: AccountInfo
     path: Models/Account.cs
@@ -379,7 +380,7 @@ items:
   source:
     remote:
       path: Models/Account.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: AddInterest
     path: Models/Account.cs
@@ -411,7 +412,7 @@ items:
   source:
     remote:
       path: Models/Account.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: TransactionString
     path: Models/Account.cs
@@ -445,7 +446,7 @@ items:
   source:
     remote:
       path: Models/Account.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: Deposit
     path: Models/Account.cs
@@ -480,7 +481,7 @@ items:
   source:
     remote:
       path: Models/Account.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: Withdrawal
     path: Models/Account.cs
@@ -515,7 +516,7 @@ items:
   source:
     remote:
       path: Models/Account.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: IsDigitPresent
     path: Models/Account.cs
@@ -552,7 +553,7 @@ items:
   source:
     remote:
       path: Models/Account.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: IsLetterPresent
     path: Models/Account.cs
@@ -589,7 +590,7 @@ items:
   source:
     remote:
       path: Models/Account.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: AccountID
     path: Models/Account.cs
@@ -624,7 +625,7 @@ items:
   source:
     remote:
       path: Models/Account.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: Balance
     path: Models/Account.cs
@@ -659,7 +660,7 @@ items:
   source:
     remote:
       path: Models/Account.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: CustomerOnAccount
     path: Models/Account.cs
@@ -694,7 +695,7 @@ items:
   source:
     remote:
       path: Models/Account.cs
-      branch: Serialization
+      branch: XMLComments
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: UpdateAccount
     path: Models/Account.cs
