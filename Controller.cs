@@ -6,18 +6,15 @@ using System.Threading.Tasks;
 
 namespace BIT706_A2_Campen_5047211
 {
-    class Controller:ISubject
+    class Controller
     {
         private static List<Customer> allCustomers = new List<Customer>();
         private static Customer selectedCustomer;
-        public List<IObserver> MyObservers = new List<IObserver>();
 
         //  Creates new Customer object and adds to the list allCustomers
         public void CreateCustomer(string firstName, string lastName, string phoneNumber, bool staffDiscount)
-        {
-            Customer c = new Customer(firstName, lastName, phoneNumber, staffDiscount);
-            allCustomers.Add(c);
-            NotifyObservers(c);
+        {            
+            allCustomers.Add(new Customer(firstName, lastName, phoneNumber, staffDiscount));           
         }
 
         //  edits the selected customer if the inputs pass validation
@@ -107,20 +104,5 @@ namespace BIT706_A2_Campen_5047211
                 CreateCustomer("Bob", "Smith", "0211111123", false);
             }
         }
-
-        public void AttachObserver(IObserver obs)
-        {
-            MyObservers.Add(obs);
-        }
-
-        public void NotifyObservers(Customer c)
-        {
-            foreach (IObserver obs in MyObservers)
-            {
-                obs.Update(c);
-            }
-        }
-
-
     }
 }

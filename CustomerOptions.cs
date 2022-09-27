@@ -10,19 +10,18 @@ using System.Windows.Forms;
 
 namespace BIT706_A2_Campen_5047211
 {
-    public partial class CustomerOptions : BIT706_A2_Campen_5047211.ParentForm, IObserver
+    public partial class CustomerOptions : BIT706_A2_Campen_5047211.ParentForm
     {
         private Controller control = new Controller();
         public CustomerOptions()
         {
             InitializeComponent();
             control.CreateTestData();
-            PopulateCustomerListBox();
         }
         
         private void CustomerOptions_Load(object sender, EventArgs e)
         {
-            Update();      
+            PopulateCustomerListBox();           
         }
 
         /*
@@ -114,11 +113,6 @@ namespace BIT706_A2_Campen_5047211
             {
                 lbCustomerList.Items.Add(control.AllCustomers[i].FullName);
             }
-        }
-
-        public void Update(Customer c)
-        {
-            lbCustomerList.Items.Add(c.FullName);
         }
     }
 }

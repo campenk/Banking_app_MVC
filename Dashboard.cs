@@ -23,12 +23,5 @@ namespace BIT706_A2_Campen_5047211
             customerOptions.Show();
             this.Close();
         }
-
-        private void bManageAccounts_Click(object sender, EventArgs e)
-        {
-            Form manageAccount = new ManageAccounts();
-            manageAccount.Show();
-            this.Hide();
-        }
     }  
 }

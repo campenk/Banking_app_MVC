@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BIT706_A2_Campen_5047211
 {
-    public class Customer
+    class Customer
     {
         private static int nextID = 1;
         private int customerID;
