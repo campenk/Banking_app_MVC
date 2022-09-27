@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account.cs" />
     <Compile Include="AddCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,7 +73,18 @@
     <Compile Include="EditCustomer.Designer.cs">
       <DependentUpon>EditCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Everyday.cs" />
+    <Compile Include="FailedWithdrawal.cs" />
+    <Compile Include="Interface.cs" />
     <Compile Include="InvalidInputException.cs" />
+    <Compile Include="Investment.cs" />
+    <Compile Include="ManageAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageAccounts.Designer.cs">
+      <DependentUpon>ManageAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Omni.cs" />
     <Compile Include="ParentForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditCustomer.resx">
       <DependentUpon>EditCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageAccounts.resx">
+      <DependentUpon>ManageAccounts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ParentForm.resx">
       <DependentUpon>ParentForm.cs</DependentUpon>
