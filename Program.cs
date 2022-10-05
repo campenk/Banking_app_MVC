@@ -18,7 +18,6 @@ namespace BIT706_A2_Campen_5047211
         static void Main()
         {
             CustomerController control = new CustomerController();
-
             IFormatter formatter = new BinaryFormatter();
             Stream stream = new FileStream("Objects.bin", FileMode.Open, FileAccess.Read,
             FileShare.Read);
@@ -27,15 +26,12 @@ namespace BIT706_A2_Campen_5047211
             AccountSingleton.setInstance((AccountSingleton)formatter.Deserialize(stream));
             stream.Close();
 
-            control.CreateTestData();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             var main_form = new Dashboard();
             main_form.FormClosed += new FormClosedEventHandler(FormClosed);
             main_form.Show();
             Application.Run();
-
-
         }
 
         static void FormClosed(object sender, FormClosedEventArgs e)
@@ -58,7 +54,5 @@ namespace BIT706_A2_Campen_5047211
             if (Application.OpenForms.Count == 0) Application.ExitThread();
             else Application.OpenForms[0].FormClosed += FormClosed;
         }
-
-
     }
 }

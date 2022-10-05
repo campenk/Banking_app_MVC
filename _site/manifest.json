@@ -12,7 +12,7 @@
           "hash": "S5HJ5B3U/8dUNG71bgw/pzUluVdfYJ8aw6i9muRDPZc="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -24,7 +24,7 @@
           "hash": "8auW/V0R9m15PVOEOeVp/L2shNqdWexntqi8hfRBubo="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -48,7 +48,7 @@
           "hash": "GrgJpxyMoeBi0yuPBxXFeizpbpxPoWlii4/Cq0U+uBk="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -60,7 +60,7 @@
           "hash": "k7nLrIc9potxiNpklWn8B/ueOTT15bF6SaxiWw5wgGw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -72,7 +72,7 @@
           "hash": "3+EAnyH44wTzM8AZuuORLbbZ35DDAdT6yt4jgzHaadg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -105,10 +105,10 @@
       "output": {
         ".html": {
           "relative_path": "api/BIT706_A2_Campen_5047211.CustomerController.html",
-          "hash": "0k8MPHjyTNaxZ2hgH8ebONHq1s84WBTNeQAMZMwvtNE="
+          "hash": "lod4tQ7bpMRioRRLqqwtPc/f2qJRwYCPrlTOfHpoJN8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -156,7 +156,7 @@
           "hash": "MmLiSkgoQWsgk7xHx+5tbsCK7l3dGQTSZbOTqHwO4es="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -252,7 +252,7 @@
           "hash": "+Zr1NHTxOmnp7NBeJcc3AENXcfUvGW8xbcSs4RzuOvI="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -288,7 +288,7 @@
           "hash": "zKcULP8P2Fs7MQsy/L4refnHbKWkESUW/a8bRjEPqsU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -324,7 +324,7 @@
           "hash": "15THJjX0oaxrQqhLWftuKdkhhH60Xoyjg4w5RZ2XDEA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -365,13 +365,13 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 0
+          "skipped_file_count": 3
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 23,
-          "skipped_file_count": 23
+          "skipped_file_count": 22
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

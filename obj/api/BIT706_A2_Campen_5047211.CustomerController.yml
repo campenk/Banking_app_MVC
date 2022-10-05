@@ -161,7 +161,7 @@ items:
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: EditCustomer
     path: Controllers/CustomerController.cs
-    startLine: 49
+    startLine: 43
   assemblies:
   - BIT706_A2_Campen_5047211
   namespace: BIT706_A2_Campen_5047211
@@ -210,7 +210,7 @@ items:
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: DeleteCustomer
     path: Controllers/CustomerController.cs
-    startLine: 90
+    startLine: 84
   assemblies:
   - BIT706_A2_Campen_5047211
   namespace: BIT706_A2_Campen_5047211
@@ -242,7 +242,7 @@ items:
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: AllCustomers
     path: Controllers/CustomerController.cs
-    startLine: 99
+    startLine: 93
   assemblies:
   - BIT706_A2_Campen_5047211
   namespace: BIT706_A2_Campen_5047211
@@ -280,7 +280,7 @@ items:
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: SelectedCustomer
     path: Controllers/CustomerController.cs
-    startLine: 105
+    startLine: 99
   assemblies:
   - BIT706_A2_Campen_5047211
   namespace: BIT706_A2_Campen_5047211
@@ -318,7 +318,7 @@ items:
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: AttachObserver
     path: Controllers/CustomerController.cs
-    startLine: 121
+    startLine: 115
   assemblies:
   - BIT706_A2_Campen_5047211
   namespace: BIT706_A2_Campen_5047211
@@ -356,7 +356,7 @@ items:
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: NotifyCustomerObservers
     path: Controllers/CustomerController.cs
-    startLine: 130
+    startLine: 124
   assemblies:
   - BIT706_A2_Campen_5047211
   namespace: BIT706_A2_Campen_5047211
@@ -394,7 +394,7 @@ items:
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: CreateIterator
     path: Controllers/CustomerController.cs
-    startLine: 142
+    startLine: 136
   assemblies:
   - BIT706_A2_Campen_5047211
   namespace: BIT706_A2_Campen_5047211
@@ -429,7 +429,7 @@ items:
       repo: https://github.com/campenk/BIT706_A3_Campen_5047211.git
     id: CreateTestData
     path: Controllers/CustomerController.cs
-    startLine: 149
+    startLine: 143
   assemblies:
   - BIT706_A2_Campen_5047211
   namespace: BIT706_A2_Campen_5047211

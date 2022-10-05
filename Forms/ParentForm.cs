@@ -19,7 +19,6 @@ namespace BIT706_A2_Campen_5047211
 
         private void ParentForm_Load(object sender, EventArgs e)
         {
-
         }
     }
 }

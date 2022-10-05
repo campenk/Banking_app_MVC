@@ -14,7 +14,6 @@ namespace BIT706_A2_Campen_5047211
     {
         private AccountController accountController = new AccountController();
         private CustomerController customerController = new CustomerController();
-        //  class variables
 
         public ManageAccounts()
         {
@@ -71,9 +70,7 @@ namespace BIT706_A2_Campen_5047211
         {
             labelError.Visible = false;
             textBoxAmount.Text = "";
-        }
-
-        
+        }        
 
         public void UpdateAccount(Account acc)
         {
@@ -210,20 +207,15 @@ namespace BIT706_A2_Campen_5047211
             for (IIterator it = accountController.CreateIterator(); it.isDone() == false;)
 
             {
-
                 listBoxAccounts.Items.Add(((Account)it.getNext()));
-
             }
-
         }
 
         private void UpdateRecentTransactions()
         {
             listBoxRecentTransactions.Items.Clear();
             string transactionString = accountController.SelectedAccount.TransactionString();
-            listBoxRecentTransactions.Items.Add(transactionString);
-
-            
+            listBoxRecentTransactions.Items.Add(transactionString);            
         }
     }
 }

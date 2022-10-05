@@ -17,7 +17,6 @@ namespace BIT706_A2_Campen_5047211
         public Account()
         {
             accountID = AccountSingleton.NextId;
-
         }
 
         public Account(Customer c)
@@ -43,21 +42,14 @@ namespace BIT706_A2_Campen_5047211
         public abstract bool IsDigitPresent(string input);
         public abstract bool IsLetterPresent(string input);
 
-
-
         public int AccountID { get => accountID; }
         public double Balance { get => balance; }
 
-
-        public Customer CustomerOnAccount { get => customer; set => customer = value; }
-       
+        public Customer CustomerOnAccount { get => customer; set => customer = value; }       
 
         public void UpdateAccount(Account acc)
         {
             throw new NotImplementedException();
-        }
-
-      
-
+        }  
     }
 }
