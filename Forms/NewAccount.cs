@@ -32,7 +32,6 @@ namespace BIT706_A2_Campen_5047211
             
             if (cbAccountType.SelectedIndex == -1)
             {
-
             }
             else
             {
@@ -62,8 +61,6 @@ namespace BIT706_A2_Campen_5047211
 
                         SetFormControlPosition(bSubmit, xControlPoint, yPoint4);
                         SetFormControlPosition(bReset, xResetButtonPoint, yPoint4);
-
-
                     }
                     else if (selectedAccountType == "Omni")
                     {

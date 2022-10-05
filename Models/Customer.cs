@@ -45,7 +45,6 @@ namespace BIT706_A2_Campen_5047211
             }
 
             customerID = CustomerSingleton.NextId;
-
             firstName = newFirstName;            
             lastName = newLastName;            
             contactNo = newContactNo; 
@@ -121,7 +120,6 @@ namespace BIT706_A2_Campen_5047211
         {
             customerAccounts.Add(account);
         }
-
 
         public string FullName { get => firstName + " " + lastName; }
 

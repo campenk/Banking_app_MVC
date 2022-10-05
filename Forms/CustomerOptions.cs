@@ -35,7 +35,6 @@ namespace BIT706_A2_Campen_5047211
             addCustomer.Show();
             this.Close();
         }       
-        //  TODO : set selected customer based on ID rather than list position
         //  checks a valid customer has been selected then opens EditCustomer form
         private void bEditCustomer_Click(object sender, EventArgs e)
         {
@@ -103,9 +102,7 @@ namespace BIT706_A2_Campen_5047211
             Form dashboard = new Dashboard();
             dashboard.Show();
             this.Close();
-        }
-
-      
+        }      
 
         public void UpdateCustomer(Customer c)
         {
@@ -116,13 +113,9 @@ namespace BIT706_A2_Campen_5047211
         {
             lbCustomerList.Items.Clear();
             for (IIterator it = customerController.CreateIterator(); it.isDone() == false;)
-
             {
-
                 lbCustomerList.Items.Add(((Customer)it.getNext()));
-
             }
-
         }
     }
 }

@@ -18,21 +18,15 @@ namespace BIT706_A2_Campen_5047211
         {
             InitializeComponent();
             RefreshList();
-        }
-
-       
+        }       
 
         public void RefreshList()
         {
             lbCustomerList.Items.Clear();
             for (IIterator it = customerController.CreateIterator(); it.isDone() == false;)
-
             {
-
                 lbCustomerList.Items.Add(((Customer)it.getNext()));
-
             }
-
         }
 
         private void bSubmit_Click(object sender, EventArgs e)

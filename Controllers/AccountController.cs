@@ -59,9 +59,6 @@ namespace BIT706_A2_Campen_5047211
             NotifyAccountObservers(omni);
         }
 
-
-
-
         /// <summary>
         /// Getter and setter for selectedAccount object
         /// </summary>
@@ -77,7 +74,6 @@ namespace BIT706_A2_Campen_5047211
                 selectedAccount = value;
             }
         }
-
 
         /// <summary>
         /// Attaches Observer to MyObservers List of IAccountObserver objects
@@ -108,7 +104,5 @@ namespace BIT706_A2_Campen_5047211
         {
             return new AccountIterator();
         }
-
-
     }
 }

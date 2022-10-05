@@ -30,12 +30,6 @@ namespace BIT706_A2_Campen_5047211
         {
             Customer c = new Customer(firstName, lastName, phoneNumber, staffDiscount);
             allCustomers.Add(c);
-            //Investment investment = new Investment(c, 4, 10, 750);
-            //Omni omni = new Omni(c, 2, -1000, 10, 300);
-            //Everyday everyday = new Everyday(c, 150);
-            //c.addtoCustomerAccounts(investment);
-            //c.addtoCustomerAccounts(omni);
-            //c.addtoCustomerAccounts(everyday);
             NotifyCustomerObservers(c);
         }
 
@@ -83,7 +77,6 @@ namespace BIT706_A2_Campen_5047211
             if (inputErrorExists == true)
             { throw new InvalidInputException(errorMessage); }
         }
-
 
         /// <summary>
         /// Deletes selected customer from allCustomers list
@@ -144,29 +137,5 @@ namespace BIT706_A2_Campen_5047211
         {
             return new CustomerIterator();
         }
-
-        //  Creates test customer data
-
-        public void CreateTestData()
-        {
-            if (allCustomers.Count == 0)
-            {
-                CreateCustomer("Sarah", "Smith", "0211111111", false);
-                CreateCustomer("Lisa", "Brown", "0211111112", false);
-                CreateCustomer("Tina", "Anderson", "0211111113", false);
-                CreateCustomer("Robert", "Watson", "0211111114", true);
-                CreateCustomer("Chris", "Smart", "0211111115", false);
-                CreateCustomer("Liam", "Pollock", "0211111116", false);
-                CreateCustomer("Tim", "Lawson", "0211111117", true);
-                CreateCustomer("Frank", "Hammond", "0211111118", false);
-                CreateCustomer("Anna", "Williams", "0211111119", false);
-                CreateCustomer("Erica", "Roberston", "0211111110", true);
-                CreateCustomer("Jess", "Wilson", "0211111121", false);
-                CreateCustomer("Sam", "McLean", "0211111122", false);
-                CreateCustomer("Bob", "Smith", "0211111123", false);
-            }
-
-        }
-
     }
 }

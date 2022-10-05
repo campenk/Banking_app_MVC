@@ -33,6 +33,4 @@ namespace BIT706_A2_Campen_5047211
         Object getNext();
         bool isDone();
     }
-
-
 }
